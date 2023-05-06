@@ -15,6 +15,7 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/typography": "^0.5.9",
+    "aos": "^2.3.4",
     "daisyui": "^2.51.6",
     "localforage": "^1.10.0",
     "lottie-web": "^5.11.0",

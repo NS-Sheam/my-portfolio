@@ -5,7 +5,7 @@ import "./HeaderBanner.css";
 
 const HeaderBanner = () => {
     return (
-        <div className='w-screen mx-auto header-banner h-screen'>
+        <div className='w-screen mx-auto header-banner'>
             <Header />
             <Banner />
         </div>
