@@ -9,12 +9,18 @@ const Banner = () => {
     return (
         <>
             {/* for dextop  */}
-            <section className=' h-screen hidden my-container lg:flex justify-around items-center'>
-                <div>
+            <section className='min-h-screen hidden my-container lg:flex justify-around items-center'>
+                <div
+                    data-aos="fade-right"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="500"
+                    data-aos-duration="500"
+                    className='w-1/2'
+                >
                     <h2 className='text-xl font-semibold tracking-widest text-[#d207d9] border-2 border-[#d207d9] rounded-md px-4 py-2 mb-2 w-3/4'>Welcome to my portfolio</h2>
-                    <h2 className='text-3xl font-light text-bandFont'>I am <span className='font-semibold mb-2'>MD. Nazmus Sakib Sheam</span></h2>
+                    <h2 className='text-5xl font-light text-bandFont'>HI! I am <span className='font-semibold mb-2 text-white'>Nazmus Sakib</span></h2>
                     <div>
-                        <p className='text-bandFont font-light text-3xl mb-2'>I am a</p>
+                        <p className='text-white text-4xl'>I am a</p>
                         <p className='ms-6 text-5xl font-bold font-gradient underline banner-text-underline'>
                             <Typical
                                 steps={['Web developer', 3000,
@@ -26,13 +32,23 @@ const Banner = () => {
                         </p>
                     </div>
                 </div>
-                <div>
+                <div className='flex justify-center items-center'>
+                    <img className='w-1/3 '
+                        data-aos="zoom-in"
+                        data-aos-anchor="#example-anchor"
+                        data-aos-offset="500"
+                        data-aos-duration="500"
+                        src={myImg} alt="" />
                     <Lottie
                         options={{
                             animationData: animationData,
                         }}
                         width={400}
                         height={400}
+                        data-aos="fade-left"
+                        data-aos-anchor="#example-anchor"
+                        data-aos-offset="500"
+                        data-aos-duration="500"
                     />
                 </div>
             </section>
@@ -40,7 +56,7 @@ const Banner = () => {
             <section className='my-container-sm lg:hidden py-4'>
                 <div>
                     <h2 className='text-xs font-semibold tracking-widest text-[#d207d9] border-2 border-[#d207d9] rounded-md px-4 py-2 mb-2 w-3/4'>Welcome to my portfolio</h2>
-                    <h2 className='text-xl font-light text-bandFont'>I am <span className='font-semibold mb-2'>MD. Nazmus Sakib Sheam</span></h2>
+                    <h2 className='text-xl font-light text-bandFont'>HI! I am <span className='font-semibold mb-2 text-white'>Nazmus Sakib</span></h2>
                     <div>
                         <p className='text-bandFont font-light text-xl mb-2'>I am a</p>
                         <p className='ms-6 text-3xl font-bold font-gradient underline banner-text-underline'>
@@ -55,31 +71,31 @@ const Banner = () => {
                     </div>
                 </div>
                 <div className='flex justify-center items-center'>
-                    <div 
-                    data-aos="fade-right"
-                    data-aos-anchor="#example-anchor"
-                    data-aos-offset="500"
-                    data-aos-duration="500"
+                    <div
+                        data-aos="fade-right"
+                        data-aos-anchor="#example-anchor"
+                        data-aos-offset="500"
+                        data-aos-duration="500"
                     >
                         <div className=''>
-                        <Lottie
-                        className="object-cover"
-                            options={{
-                                animationData: animationData,
-                            }}
-                            width={100}
-                            height={100}
-                        />
+                            <Lottie
+                                className="object-cover"
+                                options={{
+                                    animationData: animationData,
+                                }}
+                                width={200}
+                                height={200}
+                            />
                         </div>
                     </div>
                     <div
-                    className='w-2/3'
+                        className='w-1/2'
                         data-aos="fade-left"
                         data-aos-anchor="#example-anchor"
                         data-aos-offset="500"
                         data-aos-duration="500"
                     >
-                        <img className='object-cover' src={myImg} alt="" />
+                        <img className='w-full' src={myImg} alt="" />
                     </div>
                 </div>
             </section>

@@ -49,17 +49,20 @@ const Header = () => {
 
                         }
                     </div>
-                    <div className={`hidden sm-menu-item absolute transform duration-500 backdrop-blur-2xl rounded-md border p-2 m-2 border-white ${isMenuOpen ? "right-0" : "-right-80"}`}>
+                    <div className={`sm-menu-item absolute transform duration-500 backdrop-blur-sm rounded-md border p-2 m-2 border-white ${isMenuOpen ? "top-10" : "-top-80"}`}>
                         <ul className='header-list text-bandFont mb-2 text-xl flex flex-col items-center gap-2'>
                             <li className=''>
                                 <ActiveLink to="/">Home</ ActiveLink>
                             </li>
+                            <hr className='w-full'/>
                             <li className=''>
                                 <ActiveLink to="/">About</ActiveLink>
                             </li>
+                            <hr className='w-full'/>
                             <li className=''>
                                 <ActiveLink to="/">Contact</ActiveLink>
                             </li>
+                            <hr className='w-full'/>
 
                             <ActiveLink className="">
                                 <button className='font-semibold text-[#d207d9] border-2 border-[#d207d9] py-2 px-2 hover:border-bandFont hover:text-bandFont text-xl'>
