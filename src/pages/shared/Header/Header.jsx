@@ -49,7 +49,7 @@ const Header = () => {
                                 
                         }
                     </div>
-                    <div className={`sm-menu-item relative  transform duration-500 ${isMenuOpen ? "right-0" : "-right-80"}`}>
+                    <div className={`sm-menu-item relative  transform duration-500 backdrop-blur-2xl rounded-md border p-2 m-2 border-white ${isMenuOpen ? "right-0" : "-right-80"}`}>
                         <ul className='header-list text-bandFont mb-2 text-xl flex flex-col items-center gap-2'>
                             <li className=''>
                                 <ActiveLink to="/">Home</ ActiveLink>
