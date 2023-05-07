@@ -10,9 +10,9 @@ const Header = () => {
     return (
         <>
             {/* For dextop */}
-            <section className='hidden lg:flex justify-around items-center my-container mx-auto py-4'>
+            <section className='hidden lg:flex justify-around items-center my-container px-6 mx-auto py-4'>
                 <div>
-                    <h3 className='text-bandFont'>NS-Sheam</h3>
+                    <h3 className='text-white font-bold'>NS-Sheam</h3>
                 </div>
                 <div>
                     <ul className='header-list flex text-bandFont'>
@@ -38,8 +38,8 @@ const Header = () => {
             </section>
 
             {/* For Mobile  */}
-            <section className='lg:hidden my-container-sm py-4 flex justify-between items-start'>
-                <h3 className='text-bandFont text-xl font-bold'>NS-Sheam</h3>
+            <section className='lg:hidden my-container px-4 py-4 flex justify-between items-start'>
+                <h3 className='text-white text-xl font-bold'>NS-Sheam</h3>
                 <div className='flex flex-col justify-center items-end'>
                     <div>
                         {

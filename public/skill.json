@@ -1,0 +1,23 @@
+[
+    { "id": 1, "name": "HTML", "proficiency": "Advanced", "percentage": 90 },
+    { "id": 2, "name": "CSS", "proficiency": "Advanced", "percentage": 85 },
+    { "id": 3, "name": "JavaScript", "proficiency": "Advanced", "percentage": 95 },
+    { "id": 4, "name": "React", "proficiency": "Advanced", "percentage": 90 },
+    { "id": 5, "name": "Angular", "proficiency": "Intermediate", "percentage": 70 },
+    { "id": 6, "name": "Vue", "proficiency": "Intermediate", "percentage": 75 },
+    { "id": 7, "name": "Node.js", "proficiency": "Advanced", "percentage": 85 },
+    { "id": 8, "name": "Express.js", "proficiency": "Advanced", "percentage": 80 },
+    { "id": 9, "name": "MongoDB", "proficiency": "Intermediate", "percentage": 70 },
+    { "id": 10, "name": "SQL", "proficiency": "Intermediate", "percentage": 75 },
+    { "id": 11, "name": "REST APIs", "proficiency": "Advanced", "percentage": 90 },
+    { "id": 12, "name": "GraphQL", "proficiency": "Intermediate", "percentage": 80 },
+    { "id": 13, "name": "Git", "proficiency": "Advanced", "percentage": 85 },
+    { "id": 14, "name": "Webpack", "proficiency": "Intermediate", "percentage": 70 },
+    { "id": 15, "name": "Gulp", "proficiency": "Intermediate", "percentage": 75 },
+    { "id": 16, "name": "Jest", "proficiency": "Intermediate", "percentage": 80 },
+    { "id": 17, "name": "Enzyme", "proficiency": "Intermediate", "percentage": 75 },
+    { "id": 18, "name": "Webpack", "proficiency": "Intermediate", "percentage": 70 },
+    { "id": 19, "name": "Sass", "proficiency": "Intermediate", "percentage": 80 },
+    { "id": 20, "name": "Bootstrap", "proficiency": "Advanced", "percentage": 90 }
+  ]
+  

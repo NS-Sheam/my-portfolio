@@ -9,7 +9,7 @@ const Banner = () => {
     return (
         <>
             {/* for dextop  */}
-            <section className='min-h-screen hidden my-container lg:flex justify-around items-center'>
+            <section className='min-h-screen hidden my-container px-6 lg:flex justify-around items-center'>
                 <div
                     data-aos="fade-right"
                     data-aos-anchor="#example-anchor"
@@ -53,12 +53,12 @@ const Banner = () => {
                 </div>
             </section>
             {/* For Mobile  */}
-            <section className='my-container-sm lg:hidden py-4'>
+            <section className='my-container px-4 lg:hidden py-4'>
                 <div>
                     <h2 className='text-xs font-semibold tracking-widest text-[#d207d9] border-2 border-[#d207d9] rounded-md px-4 py-2 mb-2 w-3/4'>Welcome to my portfolio</h2>
                     <h2 className='text-xl font-light text-bandFont'>HI! I am <span className='font-semibold mb-2 text-white'>Nazmus Sakib</span></h2>
                     <div>
-                        <p className='text-bandFont font-light text-xl mb-2'>I am a</p>
+                        <p className='text-bandFont font-light text-xl mb-2 text-white'>I am a</p>
                         <p className='ms-6 text-3xl font-bold font-gradient underline banner-text-underline'>
                             <Typical
                                 steps={['Web developer', 3000,
