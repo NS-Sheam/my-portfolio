@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import animationData from "../../../../public/banner-animation.json"
 import Lottie from 'react-lottie';
 import Typical from 'react-typical';
@@ -6,6 +6,17 @@ import "./Banner.css"
 import myImg from "../../../assets/images/my-img.png"
 
 const Banner = () => {
+    const [showImage, setShowImage] = useState(true);
+
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            setShowImage((prevState) => !prevState);
+            // setShowImage(!showImage);
+        }, 5000); // change the visibility every 5 seconds
+
+        return () => clearInterval(intervalId);
+    }, []); // run this effect only once on mount
+
     return (
         <>
             {/* for dextop  */}
@@ -32,33 +43,40 @@ const Banner = () => {
                         </p>
                     </div>
                 </div>
-                <div className='flex justify-center items-center'>
-                    <img className='w-1/3 '
-                        data-aos="zoom-in"
-                        data-aos-anchor="#example-anchor"
-                        data-aos-offset="500"
-                        data-aos-duration="500"
-                        src={myImg} alt="" />
-                    <Lottie
-                        options={{
-                            animationData: animationData,
-                        }}
-                        width={400}
-                        height={400}
-                        data-aos="fade-left"
-                        data-aos-anchor="#example-anchor"
-                        data-aos-offset="500"
-                        data-aos-duration="500"
-                    />
+                <div className=''>
+                    {
+                        showImage ?
+                            <div
+                                className='bg-bandPrimary border-4 rounded-full overflow-hidden'
+                                data-aos="zoom-in"
+                                data-aos-anchor="#example-anchor"
+                                data-aos-offset="500"
+                                data-aos-duration="1500"
+                            >
+                                <img className=''
+                                    src={myImg} alt="" />
+                            </div> :
+                            <Lottie
+                                options={{
+                                    animationData: animationData,
+                                }}
+                                width={400}
+                                height={400}
+                                data-aos="fade-left"
+                                data-aos-anchor="#example-anchor"
+                                data-aos-offset="500"
+                                data-aos-duration="500"
+                            />
+                    }
                 </div>
             </section>
             {/* For Mobile  */}
-            <section className='my-container px-4 lg:hidden py-4'>
+            <section className='my-container px-4 lg:hidden py-10 min-h-screen flex flex-col justify-start items-center gap-8'>
                 <div>
                     <h2 className='text-xs font-semibold tracking-widest text-[#d207d9] border-2 border-[#d207d9] rounded-md px-4 py-2 mb-2 w-3/4'>Welcome to my portfolio</h2>
                     <h2 className='text-xl font-light text-bandFont'>HI! I am <span className='font-semibold mb-2 text-white'>Nazmus Sakib</span></h2>
                     <div>
-                        <p className='text-bandFont font-light text-xl mb-2 text-white'>I am a</p>
+                        <p className='font-light text-xl mb-2 text-white'>I am a</p>
                         <p className='ms-6 text-3xl font-bold font-gradient underline banner-text-underline'>
                             <Typical
                                 steps={['Web developer', 3000,
@@ -70,33 +88,38 @@ const Banner = () => {
                         </p>
                     </div>
                 </div>
-                <div className='flex justify-center items-center'>
-                    <div
-                        data-aos="fade-right"
-                        data-aos-anchor="#example-anchor"
-                        data-aos-offset="500"
-                        data-aos-duration="500"
-                    >
-                        <div className=''>
-                            <Lottie
-                                className="object-cover"
-                                options={{
-                                    animationData: animationData,
-                                }}
-                                width={200}
-                                height={200}
-                            />
+                <div className='mx-auto'>
+                    {
+                        showImage &&
+                        <div
+                            className='bg-bandPrimary border-4 rounded-full overflow-hidden w-3/4 mx-auto'
+                            data-aos="zoom-in"
+                            data-aos-anchor="#example-anchor"
+                            data-aos-offset="500"
+                            data-aos-duration="1500"
+                        >
+                            <img className=''
+                                src={myImg} alt="" />
+                        </div>}
+                    {!showImage &&
+                        <div
+                            data-aos="fade-right"
+                            data-aos-anchor="#example-anchor"
+                            data-aos-offset="500"
+                            data-aos-duration="500"
+                        >
+                            <div className='w-full'>
+                                <Lottie
+                                    className="object-cover"
+                                    options={{
+                                        animationData: animationData,
+                                    }}
+                                    width={300}
+                                    height={300}
+                                />
+                            </div>
                         </div>
-                    </div>
-                    <div
-                        className='w-1/2'
-                        data-aos="fade-left"
-                        data-aos-anchor="#example-anchor"
-                        data-aos-offset="500"
-                        data-aos-duration="500"
-                    >
-                        <img className='w-full' src={myImg} alt="" />
-                    </div>
+                    }
                 </div>
             </section>
         </>

@@ -15,6 +15,28 @@ const Slide = () => {
             .then(res => res.json())
             .then(skills => setSkills(skills))
     }, [])
+
+    const [slidesPerView, setSlidesPerView] = useState(3);
+
+    useEffect(() => {
+        const handleResize = () => {
+            const width = window.innerWidth;
+            if (width >= 1024) {
+                setSlidesPerView(3);
+            }
+            else if ((width >= 768)) {
+                setSlidesPerView(2);
+            } else {
+                setSlidesPerView(1);
+            }
+        };
+        handleResize(); // call the function once on mount
+        window.addEventListener('resize', handleResize); // listen for resize events
+
+        return () => window.removeEventListener('resize', handleResize); // remove the event listener on unmount
+    }, []);
+
+    // call the function once on mount
     const styles = {
         path: {
             stroke: '#77037B' // Green color
@@ -24,7 +46,7 @@ const Slide = () => {
         },
         text: {
             fill: '#ffffff', // White color
-            fontSize: '16px',
+            fontSize: '1.5rem',
             fontWeight: "700",
         }
     };
@@ -33,13 +55,13 @@ const Slide = () => {
             <Swiper
                 modules={[Navigation, Pagination, Scrollbar, A11y]}
                 spaceBetween={50}
-                slidesPerView={3}
+                slidesPerView={slidesPerView}
                 navigation={true}
                 // pagination={{ clickable: true }}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
             >
-                {   Array.isArray(skills) &&
+                {Array.isArray(skills) &&
                     skills.map(skill => (
                         <SwiperSlide key={skill.id}>
                             <div className='text-center'>
