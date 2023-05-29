@@ -22,4 +22,12 @@ body{
 }
 /* d207d9
 c1aaed */
+.react-tabs__tab--selected {
+  border: none !important;
+  background: transparent !important;
+}
 
+.react-tabs__tab--selected::after{
+  background: transparent;
+  border: none;
+}

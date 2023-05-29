@@ -77,11 +77,11 @@ const Banner = () => {
                     <h2 className='text-xl font-light text-bandFont'>HI! I am <span className='font-semibold mb-2 text-white'>Nazmus Sakib</span></h2>
                     <div>
                         <p className='font-light text-xl mb-2 text-white'>I am a</p>
-                        <p className='ms-6 text-3xl font-bold font-gradient underline banner-text-underline'>
+                        <p className='ms-6 text-3xl font-bold font-gradient'>
                             <Typical
-                                steps={['Web developer', 3000,
-                                    'UI/UX Designer', 3000,
-                                    'React Developer', 3000]}
+                                steps={['Mern Stack Web developer', 5000,
+                                    'UI/UX Designer', 5000,
+                                    'React Developer', 5000]}
                                 loop={Infinity}
                                 wrapper="p"
                             />
