@@ -28,6 +28,7 @@ c1aaed */
 }
 
 .react-tabs__tab--selected::after{
-  background: transparent;
-  border: none;
+  display: none;
+  border: none !important;
+  background: transparent !important;
 }

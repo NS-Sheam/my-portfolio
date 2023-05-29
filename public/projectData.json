@@ -1,0 +1,123 @@
+[
+    {
+      "id": 1,
+      "projectName": "G3 Artechture",
+      "description": "Click to redirect in G3 Artechture",
+      "liveSite": "https://ns-sheam.github.io/milest-2-Assignment-2/",
+      "image": "https://i.ibb.co/TTnLTh0/g3-artecture.png",
+      "madeWith": ["HTML", "CSS"]
+    },
+    {
+      "id": 2,
+      "projectName": "IT Services",
+      "description": "Click to redirect in IT Services",
+      "liveSite": "https://ns-sheam.github.io/milest-1-Assignment-1/",
+      "image": "https://i.ibb.co/q9PZj7S/knowledge-hunt.png",
+      "madeWith": ["HTML", "CSS"]
+    },
+    {
+      "id": 3,
+      "projectName": "Travel Guru",
+      "description": "Click to redirect in Travel Guru",
+      "liveSite": "https://travel-guru-ns.netlify.app/",
+      "image": "https://i.ibb.co/G91dw5W/travel-guru.png",
+      "madeWith": ["React", "JavaScript"]
+    },
+    {
+      "id": 4,
+      "projectName": "Justice",
+      "description": "Click to redirect in Justice",
+      "liveSite": "https://justice-legal.netlify.app/",
+      "image": "https://i.ibb.co/Rbdcbkx/justic-legal.png",
+      "madeWith": ["HTML", "CSS"]
+    },
+    {
+      "id": 5,
+      "projectName": "Tea House",
+      "description": "Click to redirect in Tea House",
+      "liveSite": "https://tea-house-ns.netlify.app/",
+      "image": "https://i.ibb.co/Bj058VP/tea-house.png",
+      "madeWith": ["HTML", "CSS"]
+    },
+    {
+      "id": 6,
+      "projectName": "Idea",
+      "description": "Click to redirect in Idea",
+      "liveSite": "https://idea-ns-sheam.netlify.app/",
+      "image": "https://i.ibb.co/K9rJ5LL/idea.png",
+      "madeWith": ["HTML", "CSS"]
+    },
+    {
+      "id": 7,
+      "projectName": "AI Universe",
+      "description": "Click to redirect in AI Universe",
+      "liveSite": "https://mnsakibphassignment6.netlify.app/",
+      "image": "https://i.ibb.co/02sqcKq/ai-universe.png",
+      "madeWith": ["JavaScript", "HTML", "CSS"]
+    },
+    {
+      "id": 8,
+      "projectName": "Knowledge Cafe",
+      "description": "Click to redirect in Knowledge Cafe",
+      "liveSite": "https://knowledge-cafe-ns.netlify.app/",
+      "image": "https://i.ibb.co/TBFrdpp/know-ledge-cafe.png",
+      "madeWith": ["JavaScript", "HTML", "CSS"]
+    },
+    {
+      "id": 9,
+      "projectName": "Geometry Genius",
+      "description": "Click to redirect in Geometry Genius",
+      "liveSite": "https://geometry-genius-ns.netlify.app/",
+      "image": "https://i.ibb.co/PwnLJ0N/geometry-genius.png",
+      "madeWith": ["JavaScript", "HTML", "CSS"]
+    },
+    {
+      "id": 10,
+      "projectName": "MealDB",
+      "description": "Click to redirect in MealDB",
+      "liveSite": "https://mealdb-nss.netlify.app/",
+      "image": "https://i.ibb.co/2jKgCgN/mealdb.png",
+      "madeWith": ["React"]
+    },
+    {
+      "id": 11,
+      "projectName": "Get Jobs",
+      "description": "Click to redirect in Get Jobs",
+      "liveSite": "https://getjobs-ph.netlify.app/",
+      "image": "https://i.ibb.co/6Btx7GF/getjobs.png",
+      "madeWith": ["React", "JavaScript"]
+    },
+    {
+      "id": 12,
+      "projectName": "Heroverse",
+      "description": "Click to redirect in Heroverse",
+      "liveSite": "https://toy-marketplace-f77ed.web.app/",
+      "image": "https://i.ibb.co/D9G14D0/Heroverse.png",
+      "madeWith": ["React", "JavaScript"]
+    },
+    {
+      "id": 13,
+      "projectName": "Chef Recipe",
+      "description": "Click to redirect in Chef Recipe",
+      "liveSite": "https://chef-recipe-hunting-client.web.app/",
+      "image": "https://i.ibb.co/sVbFNYr/chefrecipe.png",
+      "madeWith": ["React", "JavaScript"]
+    },
+    {
+      "id": 14,
+      "projectName": "News Dragon",
+      "description": "Click to redirect in News Dragon",
+      "liveSite": "https://the-news-dragon-6d4fa.web.app/",
+      "image": "https://i.ibb.co/DLg69Wg/news-dragon.png",
+      "madeWith": ["React"]
+    },
+    {
+      "id": 15,
+      "projectName": "Car Doctor",
+      "description": "Click to redirect in Car Doctor",
+      "liveSite": "https://car-doctor-4510b.web.app/",
+      "image": "https://i.ibb.co/MSHv3KD/car-doctor.png",
+      "madeWith": ["React"]
+    }
+  ]
+  

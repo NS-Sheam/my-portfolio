@@ -12,7 +12,7 @@ const Banner = () => {
         const intervalId = setInterval(() => {
             setShowImage((prevState) => !prevState);
             // setShowImage(!showImage);
-        }, 5000); // change the visibility every 5 seconds
+        }, 8000); // change the visibility every 8 seconds
 
         return () => clearInterval(intervalId);
     }, []); // run this effect only once on mount
@@ -30,13 +30,13 @@ const Banner = () => {
                 >
                     <h2 className='text-xl font-semibold tracking-widest text-[#d207d9] border-2 border-[#d207d9] rounded-md px-4 py-2 mb-2 w-3/4'>Welcome to my portfolio</h2>
                     <h2 className='text-5xl font-light text-bandFont'>HI! I am <span className='font-semibold mb-2 text-white'>Nazmus Sakib</span></h2>
-                    <div>
+                    <div className='w-full'>
                         <p className='text-white text-4xl'>I am a</p>
                         <p className='ms-6 text-5xl font-bold font-gradient underline banner-text-underline'>
                             <Typical
-                                steps={['Web developer', 3000,
-                                    'UI/UX Designer', 3000,
-                                    'React Developer', 3000]}
+                                steps={['Mern Stack developer', 5000,
+                                    'Frontend Developer', 5000,
+                                    'React Developer', 5000]}
                                 loop={Infinity}
                                 wrapper="p"
                             />
@@ -47,7 +47,7 @@ const Banner = () => {
                     {
                         showImage ?
                             <div
-                                className='bg-bandPrimary border-4 rounded-full overflow-hidden'
+                                className='bg-bandPrimary border-4 rounded-bl-full rounded-br-full rounded-tl-full overflow-hidden'
                                 data-aos="zoom-in"
                                 data-aos-anchor="#example-anchor"
                                 data-aos-offset="500"
@@ -71,16 +71,16 @@ const Banner = () => {
                 </div>
             </section>
             {/* For Mobile  */}
-            <section className='my-container px-4 lg:hidden py-10 min-h-screen flex flex-col justify-start items-center gap-8'>
-                <div>
+            <section className='my-container px-4 lg:hidden py-16'>
+                <div className='mb-8'>
                     <h2 className='text-xs font-semibold tracking-widest text-[#d207d9] border-2 border-[#d207d9] rounded-md px-4 py-2 mb-2 w-3/4'>Welcome to my portfolio</h2>
                     <h2 className='text-xl font-light text-bandFont'>HI! I am <span className='font-semibold mb-2 text-white'>Nazmus Sakib</span></h2>
-                    <div>
+                    <div className='w-full'>
                         <p className='font-light text-xl mb-2 text-white'>I am a</p>
                         <p className='ms-6 text-3xl font-bold font-gradient'>
                             <Typical
                                 steps={['Mern Stack Web developer', 5000,
-                                    'UI/UX Designer', 5000,
+                                    'Frontend Developer', 5000,
                                     'React Developer', 5000]}
                                 loop={Infinity}
                                 wrapper="p"
@@ -92,7 +92,7 @@ const Banner = () => {
                     {
                         showImage &&
                         <div
-                            className='bg-bandPrimary border-4 rounded-full overflow-hidden w-3/4 mx-auto'
+                            className='bg-bandPrimary border-4 rounded-bl-full rounded-br-full rounded-tl-full overflow-hidden w-3/4 mx-auto'
                             data-aos="zoom-in"
                             data-aos-anchor="#example-anchor"
                             data-aos-offset="500"
