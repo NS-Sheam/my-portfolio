@@ -2,4 +2,38 @@
     text-decoration-color: white;
     text-underline-offset: 0.8rem;
   }
+  @keyframes movingAnim {
+    0% {
+      /* transform: scale(1); */
+      transform: translate(-10%, 0%);
+      border-color: white;
+    }
+    25% {
+      /* transform: scale(1.2); */
+      transform: translate(0%, 10%);
+      border-color: #210062;
+    }
+    50% {
+      /* transform: scale(1); */
+      transform: translate(10%, 0%);
+      border-color: #009FBD;
+    }
+    75% {
+      /* transform: scale(1); */
+      transform: translate(0%, -10%);
+      border-color: gold;
+    }
+    100% {
+      /* transform: scale(1); */
+      transform: translate(-10%, 0%);
+      border-color: white;
+    }
+  }
   
+  .bg-bandPrimary {
+    position: relative;
+  }
+  
+  .bg-bandPrimary {
+    animation: movingAnim 3s infinite;
+  }
