@@ -8,14 +8,14 @@ import myImg from "../../../assets/images/my-img.png"
 const Banner = () => {
     const [showImage, setShowImage] = useState(true);
 
-    useEffect(() => {
-        const intervalId = setInterval(() => {
-            setShowImage((prevState) => !prevState);
-            // setShowImage(!showImage);
-        }, 8000); // change the visibility every 8 seconds
+    // useEffect(() => {
+    //     const intervalId = setInterval(() => {
+    //         setShowImage((prevState) => !prevState);
+    //         // setShowImage(!showImage);
+    //     }, 5000); // change the visibility every 8 seconds
 
-        return () => clearInterval(intervalId);
-    }, []); // run this effect only once on mount
+    //     return () => clearInterval(intervalId);
+    // }, []); // run this effect only once on mount
 
     return (
         <>
@@ -35,10 +35,10 @@ const Banner = () => {
                         <p className='ms-6 text-5xl font-bold font-gradient underline banner-text-underline'>
                             <Typical
                                 steps={['Mern Stack developer', 5000,
-                                    'Frontend Developer', 5000,
-                                    'React Developer', 5000]}
+                                    'React Developer', 5000,
+                                    'Frontend Developer', 5000,]}
                                 loop={Infinity}
-                                wrapper="p"
+                                wrapper="h2"
                             />
                         </p>
                     </div>
@@ -77,7 +77,7 @@ const Banner = () => {
                     <h2 className='text-xl font-light text-bandFont'>HI! I am <span className='font-semibold mb-2 text-white'>Nazmus Sakib</span></h2>
                     <div className='w-full'>
                         <p className='font-light text-xl mb-2 text-white'>I am a</p>
-                        <p className='ms-6 text-3xl font-bold font-gradient'>
+                        <p className='ms-6 text-3xl font-bold font-gradient underline banner-text-underline'>
                             <Typical
                                 steps={['Mern Stack Web developer', 5000,
                                     'Frontend Developer', 5000,

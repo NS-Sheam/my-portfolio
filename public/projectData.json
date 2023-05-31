@@ -2,6 +2,7 @@
     {
       "id": 1,
       "projectName": "G3 Artechture",
+      "technology": ["HTML5", "CSS3", "Tailwind css"],
       "description": "Click to redirect in G3 Artechture",
       "liveSite": "https://ns-sheam.github.io/milest-2-Assignment-2/",
       "image": "https://i.ibb.co/TTnLTh0/g3-artecture.png",
@@ -10,6 +11,7 @@
     {
       "id": 2,
       "projectName": "IT Services",
+      "technology": ["HTML5", "CSS3"],
       "description": "Click to redirect in IT Services",
       "liveSite": "https://ns-sheam.github.io/milest-1-Assignment-1/",
       "image": "https://i.ibb.co/q9PZj7S/knowledge-hunt.png",
@@ -18,6 +20,7 @@
     {
       "id": 3,
       "projectName": "Travel Guru",
+      "technology": ["React.js",  "Javascript", "HTML5", "CSS3", "Tailwind css", "Firebase"],
       "description": "Click to redirect in Travel Guru",
       "liveSite": "https://travel-guru-ns.netlify.app/",
       "image": "https://i.ibb.co/G91dw5W/travel-guru.png",
@@ -26,6 +29,7 @@
     {
       "id": 4,
       "projectName": "Justice",
+      "technology": ["HTML5", "CSS3", "Bootstrap"],
       "description": "Click to redirect in Justice",
       "liveSite": "https://justice-legal.netlify.app/",
       "image": "https://i.ibb.co/Rbdcbkx/justic-legal.png",
@@ -34,6 +38,7 @@
     {
       "id": 5,
       "projectName": "Tea House",
+      "technology": ["HTML5", "CSS3", "Tailwind css" ],
       "description": "Click to redirect in Tea House",
       "liveSite": "https://tea-house-ns.netlify.app/",
       "image": "https://i.ibb.co/Bj058VP/tea-house.png",
@@ -42,6 +47,7 @@
     {
       "id": 6,
       "projectName": "Idea",
+      "technology": ["Javascript","HTML5", "CSS3", "Tailwind css"],
       "description": "Click to redirect in Idea",
       "liveSite": "https://idea-ns-sheam.netlify.app/",
       "image": "https://i.ibb.co/K9rJ5LL/idea.png",
@@ -50,6 +56,7 @@
     {
       "id": 7,
       "projectName": "AI Universe",
+      "technology": ["Javascript", "HTML5", "CSS3", "Tailwind css"],
       "description": "Click to redirect in AI Universe",
       "liveSite": "https://mnsakibphassignment6.netlify.app/",
       "image": "https://i.ibb.co/02sqcKq/ai-universe.png",
@@ -58,6 +65,7 @@
     {
       "id": 8,
       "projectName": "Knowledge Cafe",
+      "technology": ["React.js","Javascript", "HTML5", "CSS3", "Tailwind css", "Firebase"],
       "description": "Click to redirect in Knowledge Cafe",
       "liveSite": "https://knowledge-cafe-ns.netlify.app/",
       "image": "https://i.ibb.co/TBFrdpp/know-ledge-cafe.png",
@@ -66,6 +74,7 @@
     {
       "id": 9,
       "projectName": "Geometry Genius",
+      "technology": ["Javascript", "HTML5", "CSS3"],
       "description": "Click to redirect in Geometry Genius",
       "liveSite": "https://geometry-genius-ns.netlify.app/",
       "image": "https://i.ibb.co/PwnLJ0N/geometry-genius.png",
@@ -74,6 +83,7 @@
     {
       "id": 10,
       "projectName": "MealDB",
+      "technology": ["React.js","Javascript", "HTML5", "CSS3", "Tailwind css"],
       "description": "Click to redirect in MealDB",
       "liveSite": "https://mealdb-nss.netlify.app/",
       "image": "https://i.ibb.co/2jKgCgN/mealdb.png",
@@ -82,6 +92,7 @@
     {
       "id": 11,
       "projectName": "Get Jobs",
+      "technology": ["React.js","Javascript", "HTML5", "CSS3", "Tailwind css"],
       "description": "Click to redirect in Get Jobs",
       "liveSite": "https://getjobs-ph.netlify.app/",
       "image": "https://i.ibb.co/6Btx7GF/getjobs.png",
@@ -90,6 +101,7 @@
     {
       "id": 12,
       "projectName": "Heroverse",
+      "technology": ["React.js", "Express.js", "Javascript", "Mongodb", "Firebase", "HTML5", "CSS3", "Tailwind css"],
       "description": "Click to redirect in Heroverse",
       "liveSite": "https://toy-marketplace-f77ed.web.app/",
       "image": "https://i.ibb.co/D9G14D0/Heroverse.png",
@@ -98,6 +110,7 @@
     {
       "id": 13,
       "projectName": "Chef Recipe",
+      "technology": ["React.js", "Express.js", "Javascript", "Firebase", "HTML5", "CSS3", "React Boostrap"],
       "description": "Click to redirect in Chef Recipe",
       "liveSite": "https://chef-recipe-hunting-client.web.app/",
       "image": "https://i.ibb.co/sVbFNYr/chefrecipe.png",
@@ -106,6 +119,7 @@
     {
       "id": 14,
       "projectName": "News Dragon",
+      "technology": ["React.js", "Express.js","Firebase", "HTML5", "CSS3", "React Boostrap"],
       "description": "Click to redirect in News Dragon",
       "liveSite": "https://the-news-dragon-6d4fa.web.app/",
       "image": "https://i.ibb.co/DLg69Wg/news-dragon.png",
@@ -114,6 +128,7 @@
     {
       "id": 15,
       "projectName": "Car Doctor",
+      "technology": ["React.js", "Express.js","Firebase", "HTML5", "CSS3", "Tailwind css"],
       "description": "Click to redirect in Car Doctor",
       "liveSite": "https://car-doctor-4510b.web.app/",
       "image": "https://i.ibb.co/MSHv3KD/car-doctor.png",

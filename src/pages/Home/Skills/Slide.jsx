@@ -3,7 +3,7 @@ import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 
 // Import Swiper styles
 import 'swiper/swiper-bundle.min.css';
@@ -53,10 +53,11 @@ const Slide = () => {
     return (
         <div className='my-6'>
             <Swiper
-                modules={[Navigation, Pagination, Scrollbar, A11y]}
+                modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                 spaceBetween={50}
                 slidesPerView={slidesPerView}
                 navigation={true}
+                autoplay={{ delay: 3000 }}
                 // pagination={{ clickable: true }}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}

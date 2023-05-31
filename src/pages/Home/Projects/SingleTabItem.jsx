@@ -16,8 +16,14 @@ const SingleTabItem = ({ projects }) => {
                         data-aos-duration="500"
                         className='relative rounded-lg shadow-2xl'>
                             <div className='flex flex-col gap-2 text-white bg-black bg-opacity-75 absolute -top-12 hover:top-0 h-full w-full right-0 rounded-md opacity-0 hover:opacity-100 overflow-hidden transform duration-200 p-2'>
-                                <h3 className='text-2xl font-bold'>{project.projectName}</h3>
-                                <p className='text-left'>{project.description}</p>
+                                <h3 className='text-xl font-bold leading-3'>{project.projectName}</h3>
+                                <p className='text-left leading-3'>Technology</p>
+                                {
+                                    project.technology.map((tech, i) => <p className='text-left leading-3 text-xs'>
+                                        {i+1} {tech}
+                                    </p>)
+                                }
+                                <p className=' font-bold my-2 text-center'>{project.description}</p>
                             </div>
                             <img className='rounded-lg w-full' src={project.image} alt="" />
                         </div>
