@@ -47,7 +47,7 @@ const Banner = () => {
                     {
                         showImage ?
                             <div
-                                className='bg-bandPrimary border-4 rounded-bl-full rounded-br-full rounded-tl-full overflow-hidden'
+                                className='banner-img bg-bandPrimary border-4 rounded-bl-full rounded-br-full rounded-tl-full overflow-hidden'
                                 data-aos="zoom-in"
                                 data-aos-anchor="#example-anchor"
                                 data-aos-offset="500"

@@ -30,10 +30,10 @@
     }
   }
   
-  .bg-bandPrimary {
+  .banner-img {
     position: relative;
   }
   
-  .bg-bandPrimary {
+  .banner-img {
     animation: movingAnim 3s infinite;
   }
