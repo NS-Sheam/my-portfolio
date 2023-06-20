@@ -6,7 +6,6 @@ import HeaderBanner from '../pages/Home/HeaderBanner/HeaderBanner';
 const Main = () => {
     return (
         <>
-            <HeaderBanner />
             <Outlet />
             <Footer />
         </>

@@ -23,7 +23,7 @@ const Header = () => {
                             <ActiveLink to="/">About</ActiveLink>
                         </li>
                         <li>
-                            <ActiveLink to="/">Contact</ActiveLink>
+                            <ActiveLink to="/contact">Contact</ActiveLink>
                         </li>
 
                     </ul>
@@ -60,7 +60,7 @@ const Header = () => {
                             </li>
                             <hr className='w-full'/>
                             <li className=''>
-                                <ActiveLink to="/">Contact</ActiveLink>
+                                <ActiveLink to="/contact">Contact</ActiveLink>
                             </li>
                             <hr className='w-full'/>
 
