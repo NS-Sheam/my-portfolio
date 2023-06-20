@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import animationData from "../../../../public/banner-animation.json"
-import Lottie from 'react-lottie';
 import Typical from 'react-typical';
 import "./Banner.css"
 import myImg from "../../../assets/images/my-img.png"
 
 const Banner = () => {
-    const [showImage, setShowImage] = useState(true);
+    // const [showImage, setShowImage] = useState(true);
 
     // useEffect(() => {
     //     const intervalId = setInterval(() => {
@@ -44,30 +43,12 @@ const Banner = () => {
                     </div>
                 </div>
                 <div className=''>
-                    {
-                        showImage ?
                             <div
                                 className='banner-img bg-bandPrimary border-4 rounded-bl-full rounded-br-full rounded-tl-full overflow-hidden'
-                                data-aos="zoom-in"
-                                data-aos-anchor="#example-anchor"
-                                data-aos-offset="500"
-                                data-aos-duration="1500"
                             >
                                 <img className=''
                                     src={myImg} alt="" />
-                            </div> :
-                            <Lottie
-                                options={{
-                                    animationData: animationData,
-                                }}
-                                width={400}
-                                height={400}
-                                data-aos="fade-left"
-                                data-aos-anchor="#example-anchor"
-                                data-aos-offset="500"
-                                data-aos-duration="500"
-                            />
-                    }
+                            </div> 
                 </div>
             </section>
             {/* For Mobile  */}
@@ -89,37 +70,12 @@ const Banner = () => {
                     </div>
                 </div>
                 <div className='mx-auto'>
-                    {
-                        showImage &&
                         <div
-                            className='bg-bandPrimary border-4 rounded-bl-full rounded-br-full rounded-tl-full overflow-hidden w-3/4 mx-auto'
-                            data-aos="zoom-in"
-                            data-aos-anchor="#example-anchor"
-                            data-aos-offset="500"
-                            data-aos-duration="1500"
+                            className='banner-img bg-bandPrimary border-4 rounded-bl-full rounded-br-full rounded-tl-full overflow-hidden w-3/4 mx-auto'
                         >
                             <img className=''
                                 src={myImg} alt="" />
-                        </div>}
-                    {!showImage &&
-                        <div
-                            data-aos="fade-right"
-                            data-aos-anchor="#example-anchor"
-                            data-aos-offset="500"
-                            data-aos-duration="500"
-                        >
-                            <div className='w-full'>
-                                <Lottie
-                                    className="object-cover"
-                                    options={{
-                                        animationData: animationData,
-                                    }}
-                                    width={300}
-                                    height={300}
-                                />
-                            </div>
                         </div>
-                    }
                 </div>
             </section>
         </>
