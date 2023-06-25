@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import "./SingleProject.css"
 import { Link } from 'react-router-dom';
 
 const SingleProject = ({ project }) => {
-    const [liFold, setLiFold] = useState(true);
+    // const [liFold, setLiFold] = useState(true);
     return (
         <div
             data-aos="zoom-in"
