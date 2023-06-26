@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import ActiveLink from '../ActiveLink/ActiveLink';
 import "./Header.css";
 import { } from 'react-icons/fa';
@@ -10,7 +10,7 @@ const Header = () => {
     return (
         <>
             {/* For dextop */}
-            <section className='hidden lg:flex justify-around items-center my-container px-6 mx-auto py-4'>
+            <section className='hidden lg:flex justify-around items-center inner-container py-4'>
                 <div>
                     <h3 className='text-white font-bold'>NS-Sheam</h3>
                 </div>
@@ -20,7 +20,7 @@ const Header = () => {
                             <ActiveLink to="/">Home</ ActiveLink>
                         </li>
                         <li>
-                            <ActiveLink to="/">About</ActiveLink>
+                            <ActiveLink to="/about">About</ActiveLink>
                         </li>
                         <li>
                             <ActiveLink to="/contact">Contact</ActiveLink>

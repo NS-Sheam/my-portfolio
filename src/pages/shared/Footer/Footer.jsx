@@ -1,5 +1,5 @@
 
-import React from 'react';
+
 import { FaFacebook, FaLinkedin, FaYoutube } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
@@ -12,7 +12,7 @@ const Footer = () => {
                     <Link className='hover:underline'>About</Link>
                     <Link to="https://drive.google.com/file/d/1XhOOmSn6iqDiaA-DNsgsBg3HS7YFNtfa/view?usp=drive_link" className='hover:underline'>Resume</Link>
                     <Link to="https://drive.google.com/file/d/1R7LXM_2AP6UaZMsIprypvUJhMB0MYUyS/view?usp=drive_link" className='hover:underline'>CV</Link>
-                    <Link className='hover:underline'>Hire me</Link>
+                    <Link to="/contact" className='hover:underline'>Hire me</Link>
                 </div>
                 <p>Copyright © 2023 - All right reserved</p>
             </div>

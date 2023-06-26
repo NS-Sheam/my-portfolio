@@ -8,8 +8,11 @@
 body{
   /*------ font-family: 'League Spartan', sans-serif; ------*/
 }
+.inner-container {
+  @apply xl:px-20 md:px-10 px-4 sm:px-2;
+}
 .my-container{
-  @apply container mx-auto;
+  @apply xl:mx-20 md:mx-10 mx-4 sm:mx-2;
 }
 /* .my-container-sm{
   @apply container mx-auto px-4;

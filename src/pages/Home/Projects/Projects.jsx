@@ -1,12 +1,14 @@
 import { useEffect, useState } from 'react';
 import 'react-tabs/style/react-tabs.css';
 import TabItem from './TabItem';
+import ProjectModal from '../../../components/ProjectModal';
 
 
 const Projects = () => {
     const [reactProjects, setReactProjects] = useState([]);
     const [jsProjects, setJsProjects] = useState([]);
     const [htmlCssProjects, setHtmlCssProjects] = useState([]);
+    const [singleProject, setSingleProject] = useState([]);
     useEffect(() => {
         fetch("projectData.json")
             .then(res => res.json())
@@ -24,6 +26,7 @@ const Projects = () => {
             })
     }, [])
     return (
+        <>
         <div
             className='bg-gradient-to-tr from-bandPrimary to-bandSecondary my-container min-h-screen p-4 lg:p-6'>
             <div
@@ -38,11 +41,15 @@ const Projects = () => {
                         reactProjects={reactProjects}
                         jsProjects={jsProjects}
                         htmlCssProjects={htmlCssProjects}
+                        setSingleProject={setSingleProject}
                     />
                 </div>
             </div>
-
         </div>
+        <ProjectModal
+        projectData={singleProject} 
+        />
+        </>
     );
 };
 

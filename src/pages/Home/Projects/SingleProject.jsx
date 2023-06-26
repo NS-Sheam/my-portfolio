@@ -1,9 +1,9 @@
 // import React, { useState } from 'react';
 import "./SingleProject.css"
-import { Link } from 'react-router-dom';
 
-const SingleProject = ({ project }) => {
+const SingleProject = ({ project, setSingleProject }) => {
     // const [liFold, setLiFold] = useState(true);
+
     return (
         <div
             data-aos="zoom-in"
@@ -24,9 +24,16 @@ const SingleProject = ({ project }) => {
                     ))}
                 </p>
                 <div className="card-actions mt-auto">
-                    <Link to={project?.liveSite}>
-                        <button className="btn bg-bandPrimary hover:text-bandPrimary hover:bg-white transform duration-300 px-10 py-2 rounded-full font-bold">Live Site</button>
-                    </Link>
+                    <label
+                    onClick={()=> {
+                        setSingleProject(project)
+                        window.my_modal_4.showModal()
+                    }}
+                    htmlFor="my-modal-5"
+                    className="btn text-white bg-bandPrimary hover:text-bandPrimary hover:bg-white transform duration-300 px-10 py-2 rounded-full font-bold"
+                >
+                    Details
+                </label>
                 </div>
             </div>
         </div>

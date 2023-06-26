@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import SingleProject from './SingleProject';
 
-const SingleTabItem = ({ projects }) => {
+const SingleTabItem = ({ projects, setSingleProject }) => {
     const [fold, setFold] = useState(true);
 
     return (
@@ -11,10 +10,14 @@ const SingleTabItem = ({ projects }) => {
                 fold ?
                     projects?.slice(0, 5).map(project => <SingleProject
                         key={project.id}
-                        project={project} />) :
+                        project={project} 
+                        setSingleProject={setSingleProject}
+                        />) :
                     projects?.map(project => <SingleProject
                         key={project.id}
-                        project={project} />)
+                        project={project} 
+                        setSingleProject={setSingleProject}
+                        />)
             }
             {
                 fold &&

@@ -1,9 +1,11 @@
-import React from 'react';
+import { useLayoutEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 import Footer from '../pages/shared/Footer/Footer';
-import HeaderBanner from '../pages/Home/HeaderBanner/HeaderBanner';
 
 const Main = () => {
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0);
+      });
     return (
         <>
             <Outlet />

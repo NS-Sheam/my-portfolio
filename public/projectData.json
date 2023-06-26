@@ -3,7 +3,9 @@
       "id": 1,
       "projectName": "G3 Artechture",
       "technology": ["HTML5", "CSS3", "Tailwind css"],
-      "description": "Click to redirect in G3 Artechture",
+      "description": [
+        "Use HTML, CSS and Bootstrap", "Use Bootstrap as css framework"
+      ],
       "liveSite": "https://ns-sheam.github.io/milest-2-Assignment-2/",
       "image": "https://i.ibb.co/TTnLTh0/g3-artecture.png",
       "madeWith": ["HTML", "CSS"]
@@ -12,16 +14,20 @@
       "id": 2,
       "projectName": "IT Services",
       "technology": ["HTML5", "CSS3"],
-      "description": "Click to redirect in IT Services",
-      "liveSite": "https://knowledge-hunt.netlify.app/",
-      "image": "https://i.ibb.co/q9PZj7S/knowledge-hunt.png",
+      "description": [
+        "Use HTML, CSS and Bootstrap", "Use Bootstrap as css framework"
+      ],
+      "liveSite": "https://ns-sheam.github.io/influencer-gear-mod-10/",
+      "image": "https://i.ibb.co/r5whx1t/it-service-2.png",
       "madeWith": ["HTML", "CSS"]
     },
     {
       "id": 3,
       "projectName": "Travel Guru",
-      "technology": ["React.js",  "Javascript", "HTML5", "CSS3", "Tailwind css", "Firebase"],
-      "description": "Click to redirect in Travel Guru",
+      "technology": ["React.js",  "Javascript", "HTML5", "CSS3", "Tailwind css", "Firebase", "Swiper.js"],
+      "description": [
+        "Travel Guru is a hotel booking site", "Added Swiper.js for slider", "Implement firebase authentication system", "Implement backend functionality with Express.js"
+      ],
       "liveSite": "https://travel-guru-ns.netlify.app/",
       "image": "https://i.ibb.co/G91dw5W/travel-guru.png",
       "madeWith": ["React", "JavaScript"]
@@ -30,7 +36,9 @@
       "id": 4,
       "projectName": "Justice",
       "technology": ["HTML5", "CSS3", "Bootstrap"],
-      "description": "Click to redirect in Justice",
+      "description": [
+        "Use HTML, CSS and Bootstrap", "Use Bootstrap as css framework"
+      ],
       "liveSite": "https://justice-legal.netlify.app/",
       "image": "https://i.ibb.co/Rbdcbkx/justic-legal.png",
       "madeWith": ["HTML", "CSS"]
@@ -39,7 +47,9 @@
       "id": 5,
       "projectName": "Tea House",
       "technology": ["HTML5", "CSS3", "Tailwind css" ],
-      "description": "Click to redirect in Tea House",
+      "description": [
+        "Used HTML, CSS", "Use tailwind as css framework"
+      ],
       "liveSite": "https://tea-house-ns.netlify.app/",
       "image": "https://i.ibb.co/Bj058VP/tea-house.png",
       "madeWith": ["HTML", "CSS"]
@@ -48,7 +58,9 @@
       "id": 6,
       "projectName": "Idea",
       "technology": ["Javascript","HTML5", "CSS3", "Tailwind css"],
-      "description": "Click to redirect in Idea",
+      "description": [
+        "Used HTML, CSS and Javascript", "Use tailwind as css framework", "Not so much functionality added"
+      ],
       "liveSite": "https://idea-ns-sheam.netlify.app/",
       "image": "https://i.ibb.co/K9rJ5LL/idea.png",
       "madeWith": ["HTML", "CSS"]
@@ -57,7 +69,9 @@
       "id": 7,
       "projectName": "AI Universe",
       "technology": ["Javascript", "HTML5", "CSS3", "Tailwind css"],
-      "description": "Click to redirect in AI Universe",
+      "description": [
+        "AI Universe site is javascript based site", "added modal with javascript", "Used bookmark functionality"
+      ],
       "liveSite": "https://mnsakibphassignment6.netlify.app/",
       "image": "https://i.ibb.co/02sqcKq/ai-universe.png",
       "madeWith": ["JavaScript", "HTML", "CSS"]
@@ -66,7 +80,9 @@
       "id": 8,
       "projectName": "Knowledge Cafe",
       "technology": ["React.js","Javascript", "HTML5", "CSS3", "Tailwind css", "Firebase"],
-      "description": "Click to redirect in Knowledge Cafe",
+      "description": [
+        "Knowledge Cafe site is for searching books", "Implemented react router", "User can read different books"
+      ],
       "liveSite": "https://knowledge-cafe-ns.netlify.app/",
       "image": "https://i.ibb.co/TBFrdpp/know-ledge-cafe.png",
       "madeWith": ["JavaScript", "HTML", "CSS"]
@@ -75,7 +91,7 @@
       "id": 9,
       "projectName": "Geometry Genius",
       "technology": ["Javascript", "HTML5", "CSS3"],
-      "description": "Click to redirect in Geometry Genius",
+      "description": ["Geometry Genius is a single page site for getting the area of different shape", "Used javascript for calculate area"],
       "liveSite": "https://geometry-genius-ns.netlify.app/",
       "image": "https://i.ibb.co/PwnLJ0N/geometry-genius.png",
       "madeWith": ["JavaScript", "HTML", "CSS"]
@@ -84,7 +100,9 @@
       "id": 10,
       "projectName": "MealDB",
       "technology": ["React.js","Javascript", "HTML5", "CSS3", "Tailwind css"],
-      "description": "Click to redirect in MealDB",
+      "description": [
+        "Site for searching different meals in the world", "Added search functionality", "Use api for collection meal data"
+      ],
       "liveSite": "https://mealdb-nss.netlify.app/",
       "image": "https://i.ibb.co/2jKgCgN/mealdb.png",
       "madeWith": ["React"]
@@ -93,7 +111,9 @@
       "id": 11,
       "projectName": "Get Jobs",
       "technology": ["React.js","Javascript", "HTML5", "CSS3", "Tailwind css"],
-      "description": "Click to redirect in Get Jobs",
+      "description": [
+        "Get jobs is a job searching and applying site", "Added applied job functionality with localhost", "Only react based website and no backend used"
+      ],
       "liveSite": "https://getjobs-ph.netlify.app/",
       "image": "https://i.ibb.co/6Btx7GF/getjobs.png",
       "madeWith": ["React", "JavaScript"]
@@ -102,7 +122,9 @@
       "id": 12,
       "projectName": "Heroverse",
       "technology": ["React.js", "Express.js", "Javascript", "Mongodb", "Firebase", "HTML5", "CSS3", "Tailwind css"],
-      "description": "Click to redirect in Heroverse",
+      "description":[
+        "Full stack project with MERN technology", "Added backend functionality with Express.js", "Implemented Firebase authentication system", "Use Mongodb for store data", "Use private route for make secure routing"
+      ],
       "liveSite": "https://toy-marketplace-f77ed.web.app/",
       "image": "https://i.ibb.co/D9G14D0/Heroverse.png",
       "madeWith": ["React", "JavaScript"]
@@ -111,7 +133,9 @@
       "id": 13,
       "projectName": "Chef Recipe",
       "technology": ["React.js", "Express.js", "Javascript", "Firebase", "HTML5", "CSS3", "React Boostrap"],
-      "description": "Click to redirect in Chef Recipe",
+      "description":[
+        "Full stack project with MERN technology", "Added backend functionality with Express.js", "Implemented Firebase authentication system", "Use Mongodb for store data", "Use private route for make secure routing"
+      ],
       "liveSite": "https://chef-recipe-hunting-client.web.app/",
       "image": "https://i.ibb.co/sVbFNYr/chefrecipe.png",
       "madeWith": ["React", "JavaScript"]
@@ -120,7 +144,9 @@
       "id": 14,
       "projectName": "News Dragon",
       "technology": ["React.js", "Express.js","Firebase", "HTML5", "CSS3", "React Boostrap"],
-      "description": "Click to redirect in News Dragon",
+      "description":[
+        "Full stack project with MERN technology", "Added backend functionality with Express.js", "Implemented Firebase authentication system", "Use private route for make secure routing"
+      ],
       "liveSite": "https://the-news-dragon-6d4fa.web.app/",
       "image": "https://i.ibb.co/DLg69Wg/news-dragon.png",
       "madeWith": ["React"]
@@ -129,10 +155,23 @@
       "id": 15,
       "projectName": "Car Doctor",
       "technology": ["React.js", "Express.js","Firebase", "HTML5", "CSS3", "Tailwind css"],
-      "description": "Click to redirect in Car Doctor",
+      "description":[
+        "Full stack project with MERN technology", "Added backend functionality with Express.js", "Implemented Firebase authentication system", "Use Mongodb for store data", "Use private route for make secure routing"
+      ],
       "liveSite": "https://car-doctor-4510b.web.app/",
       "image": "https://i.ibb.co/MSHv3KD/car-doctor.png",
-      "madeWith": ["React"]
+      "madeWith": ["React","Express", "Mongodb"]
+    },
+    {
+      "id": 16,
+      "projectName": "Magic Learner",
+      "technology": ["React.js", "Express.js", "Javascript", "Mongodb", "Firebase", "HTML5", "CSS3", "Tailwind css", "Stripe"],
+      "description":[
+        "Full stack project with MERN technology", "Added backend functionality with Express.js", "Implemented Firebase authentication system", "Use Mongodb for store data", "Use private route for make secure routing", "Implement stripe payment gateway system", "Added image file uploading system", "Implement dashboard", "Added admin functionality"
+      ],
+      "liveSite": "https://summer-camp-school-4b850.web.app/",
+      "image": "https://i.ibb.co/K20CtvM/magic-learner.png",
+      "madeWith": ["React","Express", "Mongodb" ]
     }
   ]
   

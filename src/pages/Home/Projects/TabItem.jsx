@@ -1,8 +1,9 @@
-import { Link } from "react-router-dom";
+
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import SingleTabItem from "./SingleTabItem";
 
-const TabItem = ({reactProjects, jsProjects, htmlCssProjects}) => {
+const TabItem = ({reactProjects, jsProjects, htmlCssProjects, setSingleProject}) => {
+    // console.log(setSingleProject);
     return (
         <>
             <Tabs className="w-4/5 mx-auto">
@@ -14,16 +15,19 @@ const TabItem = ({reactProjects, jsProjects, htmlCssProjects}) => {
                 <TabPanel className="mx-auto lg:my-8">
                     <SingleTabItem
                     projects={reactProjects}
+                    setSingleProject={setSingleProject}
                     />
                 </TabPanel>
                 <TabPanel className="mx-auto lg:my-8">
                     <SingleTabItem
                     projects={jsProjects}
+                    setSingleProject={setSingleProject}
                     />
                 </TabPanel>
                 <TabPanel className="mx-auto lg:my-8">
                     <SingleTabItem
                     projects={htmlCssProjects}
+                    setSingleProject={setSingleProject}
                     />
                 </TabPanel>
             </Tabs>
