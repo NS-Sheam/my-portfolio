@@ -7,7 +7,7 @@ import { useLayoutEffect } from 'react';
 const Home = () => {
     useLayoutEffect(() => {
         window.scrollTo(0, 0);
-      });
+    });
     return (
         <>
             <HeaderBanner />

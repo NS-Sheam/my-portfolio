@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const ProjectModal = ({ projectData }) => {
     const {  projectName, technology, description, liveSite, image } = projectData;
-    
+    console.log(liveSite);
     return (
         <div>
             {/* The button to open modal */}
@@ -34,7 +34,7 @@ const ProjectModal = ({ projectData }) => {
                                     }
                                 </ul>
                                 <Link to={liveSite}>
-                                    <button className="btn text-white bg-bandPrimary hover:text-bandPrimary hover:bg-white transform duration-300 px-10 py-2 rounded-full font-bold my-3">Live Site</button>
+                                    <label className="btn text-white bg-bandPrimary hover:text-bandPrimary hover:bg-white transform duration-300 px-10 py-2 rounded-full font-bold my-3">Live Site</label>
                                 </Link>
                             </div>
                         </div>
