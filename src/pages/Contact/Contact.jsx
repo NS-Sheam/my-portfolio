@@ -42,6 +42,7 @@ const Contact = () => {
                 })
             });
     };
+    
     return (
         <>
             <div className="bg-bandSecondary">

@@ -7,6 +7,9 @@ import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const handleDownloadResume = () => {
+        window.open("https://drive.google.com/u/0/uc?id=1XhOOmSn6iqDiaA-DNsgsBg3HS7YFNtfa&export=download");
+    };
     return (
         <>
             {/* For dextop */}
@@ -20,7 +23,13 @@ const Header = () => {
                             <ActiveLink to="/">Home</ ActiveLink>
                         </li>
                         <li>
+                            <ActiveLink to="/projects">Projects</ ActiveLink>
+                        </li>
+                        <li>
                             <ActiveLink to="/about">About</ActiveLink>
+                        </li>
+                        <li onClick={handleDownloadResume}>
+                            <ActiveLink >Resume</ActiveLink>
                         </li>
                         <li>
                             <ActiveLink to="/contact">Contact</ActiveLink>
@@ -29,9 +38,9 @@ const Header = () => {
                     </ul>
                 </div>
                 <div>
-                    <ActiveLink>
+                    <ActiveLink to="/contact">
                         <button className='font-semibold text-[#d207d9] border-2 border-[#d207d9] py-2 px-3 hover:border-bandFont hover:text-bandFont'>
-                            Contact me
+                            Hire me
                         </button>
                     </ActiveLink>
                 </div>
@@ -49,14 +58,22 @@ const Header = () => {
 
                         }
                     </div>
-                    <div className={`sm-menu-item absolute transform duration-500 backdrop-blur-sm rounded-md border p-2 m-2 border-white ${isMenuOpen ? "top-10" : "-top-80"}`}>
+                    <div className={`sm-menu-item absolute transform duration-500 backdrop-blur-sm rounded-md border p-2 m-2 border-white z-30 ${isMenuOpen ? "top-10" : "-top-80"}`}>
                         <ul className='header-list text-bandFont mb-2 text-xl flex flex-col items-center gap-2'>
                             <li className=''>
                                 <ActiveLink to="/">Home</ ActiveLink>
                             </li>
                             <hr className='w-full'/>
                             <li className=''>
-                                <ActiveLink to="/">About</ActiveLink>
+                                <ActiveLink to="/Projects">Projects</ ActiveLink>
+                            </li>
+                            <hr className='w-full'/>
+                            <li className=''>
+                                <ActiveLink to="/about">About</ActiveLink>
+                            </li>
+                            <hr className='w-full'/>
+                            <li onClick={handleDownloadResume} className=''>
+                                <ActiveLink>resume</ActiveLink>
                             </li>
                             <hr className='w-full'/>
                             <li className=''>
@@ -64,7 +81,7 @@ const Header = () => {
                             </li>
                             <hr className='w-full'/>
 
-                            <ActiveLink className="">
+                            <ActiveLink to="/contact" className="">
                                 <button className='font-semibold text-[#d207d9] border-2 border-[#d207d9] py-2 px-2 hover:border-bandFont hover:text-bandFont text-xl'>
                                     Contact me
                                 </button>

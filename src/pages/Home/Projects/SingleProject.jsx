@@ -7,7 +7,6 @@ const SingleProject = ({ project, setSingleProject }) => {
     return (
         <div
             data-aos="zoom-in"
-            data-aos-offset="50"
             data-aos-duration="500"
             className="single-project card bg-bandSecondary shadow-xl text-white rounded-lg lg:h-full transform rotate-30 hover:rotate-0 transition-transform duration-300">
             <figure className="px-5 pt-5">
