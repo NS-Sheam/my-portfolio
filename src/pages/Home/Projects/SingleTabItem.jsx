@@ -5,7 +5,7 @@ const SingleTabItem = ({ projects, setSingleProject }) => {
     const [fold, setFold] = useState(true);
 
     return (
-        <div className="grid lg:grid-cols-3 items-end mx-auto my-5 gap-5">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 items-end mx-auto my-5 lg:my-8 gap-5">
             {
                 fold ?
                     projects?.slice(0, 5).map(project => <SingleProject

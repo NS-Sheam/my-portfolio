@@ -22,7 +22,7 @@ const Banner = () => {
     return (
         <>
             {/* for dextop  */}
-            <section className='min-h-screen hidden my-container px-6 lg:flex justify-around items-center'>
+            <section className='min-h-screen hidden inner-container lg:flex justify-around items-center'>
                 <div
                     data-aos="fade-right"
                     data-aos-anchor="#example-anchor"

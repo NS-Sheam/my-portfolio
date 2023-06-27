@@ -8,9 +8,9 @@ const SingleProject = ({ project, setSingleProject }) => {
         <div
             data-aos="zoom-in"
             data-aos-duration="500"
-            className="single-project card bg-bandSecondary shadow-xl text-white rounded-lg lg:h-full transform rotate-30 hover:rotate-0 transition-transform duration-300">
+            className="single-project mx-auto bg-bandSecondary shadow-xl text-white rounded-lg lg:h-full transform rotate-30 hover:rotate-0 transition-transform duration-300">
             <figure className="px-5 pt-5">
-                <img src={project.image} alt="Shoes" className="rounded-xl" />
+                <img src={project.image} alt="Shoes" className="rounded-xl mx-auto" />
             </figure>
             <div className="card-body items-center text-center p-4 space-y-3 flex flex-col flex-grow justify-between">
                 <h2 className="card-title text-xl font-bold">{project.projectName}</h2>
