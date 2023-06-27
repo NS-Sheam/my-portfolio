@@ -1,15 +1,26 @@
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import ActiveLink from '../ActiveLink/ActiveLink';
 import "./Header.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { AiOutlineHome, AiOutlineMail, AiOutlineProject } from 'react-icons/ai';
 import { SiAboutdotme } from 'react-icons/si';
+import { motion } from "framer-motion";
+import { ThemeContext } from '../../../layouts/Main';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    
+
     const [isHeaderFixed, setIsHeaderFixed] = useState(false);
+
+    const { theme, setTheme } = useContext(ThemeContext);
+
+    const [isOn, setIsOn] = useState(false);
+
+    const toggleSwitch = () => {
+        setIsOn(!isOn)
+        theme == "light" ? setTheme("dark") : setTheme("light")
+    };
 
     useEffect(() => {
         const handleScroll = () => {
@@ -47,12 +58,20 @@ const Header = () => {
 
         </ul>
     </div>
+    const spring = {
+        type: "spring",
+        stiffness: 700,
+        damping: 30
+    };
     return (
         <>
             {/* For dextop */}
             <section className='hidden lg:flex justify-around items-center inner-container py-4'>
-                <div>
+                <div className='flex justify-center items-center gap-2'>
                     <h3 className='text-white font-bold'>NS-Sheam</h3>
+                    <div className="switch dark-switch" data-isOn={isOn} onClick={toggleSwitch}>
+                        <motion.div className={theme == "light" ? "dark-handle" : "light-handle"} layout transition={spring} />
+                    </div>
                 </div>
                 <div className={`${isHeaderFixed && "hidden"}`}>
                     <ul className='header-list flex gap-6 text-bandFont'>
@@ -82,7 +101,12 @@ const Header = () => {
 
             {/* For Mobile  */}
             <section className='lg:hidden my-container px-4 py-4 flex justify-between items-start'>
+                <div className='flex justify-center items-center gap-2'>
                 <h3 className='text-white text-xl font-bold'>NS-Sheam</h3>
+                <div className="switch dark-switch" data-isOn={isOn} onClick={toggleSwitch}>
+                    <motion.div className={theme == "light" ? "dark-handle" : "light-handle"} layout transition={spring} />
+                </div>
+                </div>
                 <div className='flex flex-col justify-center items-end'>
                     <div>
                         {

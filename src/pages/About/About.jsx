@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 import Header from "../shared/Header/Header";
+import { useContext } from "react";
+import { ThemeContext } from "../../layouts/Main";
 
 const About = () => {
+    const { theme } = useContext(ThemeContext);
     const handleDownloadResume = () => {
         window.open("https://drive.google.com/u/0/uc?id=1XhOOmSn6iqDiaA-DNsgsBg3HS7YFNtfa&export=download");
     };
@@ -14,8 +17,8 @@ const About = () => {
                 <Header />
             </div>
             <h1 className="pt-5 md:pt-8 text-center text-3xl lg:text-6xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 text-transparent bg-clip-text">About me!</h1>
-            <div className="bg-white inner-container py-5 md:py-8 space-y-4 flex flex-col md:flex-row items-center justify-between">
-                <div className="md:text-xl text-bandSecondary space-y-3 w-full md:w-1/2 text-center md:text-left">
+            <div className="inner-container py-5 md:py-8 space-y-4 flex flex-col md:flex-row items-center justify-between">
+                <div className={`md:text-xl ${theme == "light" ? "text-bandSecondary" : "text-white"} space-y-3 w-full md:w-1/2 text-center md:text-left`}>
                     <p>Name: <span className="font-bold text-green-500">MD. Nazmus Sakib Sheam</span></p>
                     <p>Age: <span className="font-bold">23 Years</span></p>
                     <p>Position: <span className="font-bold">MERN Stack Developer</span></p>

@@ -14,6 +14,7 @@ module.exports = {
       "react/no-unused-prop-types": 0,
       "react/prop-types": "off",
     //   "no-unused-vars": "off",
+    "react/no-unescaped-entities": 0
     },
   }
   
