@@ -37,7 +37,7 @@ const Banner = () => {
                         <p className='ms-6 text-5xl font-bold font-gradient underline banner-text-underline'>
                             <Typed
                                 strings={[
-                                    'Mern developer',
+                                    'Mern Stack developer',
                                     'React Developer',
                                     'Frontend Developer']}
                                 typeSpeed={60}
@@ -58,7 +58,7 @@ const Banner = () => {
                 </div>
                 <div className=''>
                     <div
-                        className='banner-img bg-bandSecondary border-4 rounded-bl-full rounded-br-full rounded-tl-full overflow-hidden shadow-xl shadow-white'
+                        className='banner-img bg-bandSecondary border-4 rounded-bl-full rounded-br-full rounded-tl-full overflow-hidden'
                     >
                         <img className=''
                             src={myImg} alt="" />
@@ -96,7 +96,7 @@ const Banner = () => {
                 </div>
                 <div className='mx-auto'>
                     <div
-                        className='banner-img bg-bandSecondary border-4 rounded-bl-full rounded-br-full rounded-tl-full overflow-hidden w-3/4 mx-auto shadow-md shadow-white'
+                        className='banner-img bg-bandSecondary border-4 rounded-bl-full rounded-br-full rounded-tl-full overflow-hidden w-3/4 mx-auto'
                     >
                         <img className=''
                             src={myImg} alt="" />

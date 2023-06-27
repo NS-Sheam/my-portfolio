@@ -5,7 +5,7 @@ import Slide from './Slide';
 
 const Skills = () => {
     return (
-        <section className='bg-gradient-to-tr from-bandPrimary to-bandSecondary my-container lg:h-screen p-4 lg:p-6'>
+        <section className='bg-gradient-to-tr from-bandPrimary to-bandSecondary my-container lg:min-h-screen p-4 lg:p-6'>
             <div
                 data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom"
