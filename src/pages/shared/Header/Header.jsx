@@ -116,8 +116,8 @@ const Header = () => {
 
                         }
                     </div>
-                    <div className={`sm-menu-item absolute transform duration-500 backdrop-blur-sm rounded-md border p-2 m-2 border-white z-30 ${isMenuOpen ? "top-10" : "-top-80"}`}>
-                        <ul className='header-list text-bandFont mb-2 text-xl flex flex-col items-center gap-2'>
+                    <div className={`sm-menu-item absolute transform duration-500 ${theme == "light" ? " bg-black bg-opacity-60" : "backdrop-blur-sm"} rounded-md border p-2 m-2 border-white z-30 ${isMenuOpen ? "top-10" : "-top-80"}`}>
+                        <ul className={`header-list text-bandFont mb-2 text-xl flex flex-col items-center gap-2`}>
                             <li className=''>
                                 <ActiveLink to="/">Home</ ActiveLink>
                             </li>
