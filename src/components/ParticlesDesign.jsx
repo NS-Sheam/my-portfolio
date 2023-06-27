@@ -17,7 +17,6 @@ const ParticlesDesign = () => {
 
     return (
         <Particles
-        className="z-50"
             id="tsparticles"
             init={particlesInit}
             loaded={particlesLoaded}

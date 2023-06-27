@@ -1,8 +1,11 @@
 
 import { Link } from "react-router-dom";
+import { RxOpenInNewWindow } from 'react-icons/rx';
+import { AiFillGithub } from 'react-icons/ai';
+import { FiLink } from 'react-icons/fi';
 
 const ProjectModal = ({ projectData }) => {
-    const {  projectName, technology, description, liveSite, image } = projectData;
+    const { projectName, technology, description, liveSite, image, clientSite, serverSite } = projectData;
     console.log(liveSite);
     return (
         <div>
@@ -33,9 +36,19 @@ const ProjectModal = ({ projectData }) => {
                                         </li>)
                                     }
                                 </ul>
-                                <Link to={liveSite}>
-                                    <label className="btn text-white bg-bandPrimary hover:text-bandPrimary hover:bg-white transform duration-300 px-10 py-2 rounded-full font-bold my-3">Live Site</label>
-                                </Link>
+                                <div className="flex items-center gap-3 h-8">
+                                    <Link className="transform transition-all duration-200 text-white hover:text-4xl text-2xl" to={liveSite}>
+                                        <RxOpenInNewWindow />
+                                    </Link>
+                                    <Link className="transform transition-all duration-200 text-white hover:text-4xl text-2xl" to={clientSite}>
+                                        <AiFillGithub />
+                                    </Link>
+                                    {
+                                        serverSite && <Link className="transform transition-all duration-200 text-white hover:text-4xl text-2xl" to={serverSite}>
+                                            <FiLink />
+                                        </Link>
+                                    }
+                                </div>
                             </div>
                         </div>
                         {/* if there is a button, it will close the modal */}

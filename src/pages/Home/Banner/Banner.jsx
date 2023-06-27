@@ -2,6 +2,7 @@
 import "./Banner.css"
 import myImg from "../../../assets/images/my-img.png"
 import Typed from 'react-typed';
+import { AiOutlineCloudDownload } from 'react-icons/ai';
 
 const Banner = () => {
     // const [showImage, setShowImage] = useState(true);
@@ -14,6 +15,9 @@ const Banner = () => {
 
     //     return () => clearInterval(intervalId);
     // }, []); // run this effect only once on mount
+    const handleDownloadResume = () => {
+        window.open("https://drive.google.com/u/0/uc?id=1XhOOmSn6iqDiaA-DNsgsBg3HS7YFNtfa&export=download");
+    };
 
     return (
         <>
@@ -31,27 +35,30 @@ const Banner = () => {
                     <div className='w-full'>
                         <p className='text-white text-4xl'>I am a</p>
                         <p className='ms-6 text-5xl font-bold font-gradient underline banner-text-underline'>
-                                <Typed
-                                    strings={[
-                                        'Mern developer',
-                                        'React Developer',
-                                        'Frontend Developer']}
-                                    typeSpeed={60}
-                                    backSpeed={60}
-                                    smartBackspace
-                                    shuffle={false}
-                                    backDelay={3000}
-                                    fadeOut={false}
-                                    fadeOutDelay={100}
-                                    loop
-                                    cursorChar="_"
-                                />
+                            <Typed
+                                strings={[
+                                    'Mern developer',
+                                    'React Developer',
+                                    'Frontend Developer']}
+                                typeSpeed={60}
+                                backSpeed={60}
+                                smartBackspace
+                                shuffle={false}
+                                backDelay={3000}
+                                fadeOut={false}
+                                fadeOutDelay={100}
+                                loop
+                                cursorChar="_"
+                            />
                         </p>
+                    </div>
+                    <div className="my-8">
+                        <button onClick={handleDownloadResume} className="text-white uppercase font-bold flex items-center gap-2 bg-gradient-to-r from-blue-400 hover:to-blue-400 via-purple-500 to-pink-500 hover:from-pink-500 py-2 px-3 rounded-full">Download Resume <AiOutlineCloudDownload /></button>
                     </div>
                 </div>
                 <div className=''>
                     <div
-                        className='banner-img bg-bandPrimary border-4 rounded-bl-full rounded-br-full rounded-tl-full overflow-hidden'
+                        className='banner-img bg-bandSecondary border-4 rounded-bl-full rounded-br-full rounded-tl-full overflow-hidden shadow-xl shadow-white'
                     >
                         <img className=''
                             src={myImg} alt="" />
@@ -66,27 +73,30 @@ const Banner = () => {
                     <div className='w-full'>
                         <p className='font-light text-xl mb-2 text-white'>I am a</p>
                         <p className='ms-6 text-2xl font-bold font-gradient underline banner-text-underline'>
-                        <Typed
-                                    strings={[
-                                        'MERN Stack Developer',
-                                        'React Developer',
-                                        'Frontend Developer']}
-                                    typeSpeed={60}
-                                    backSpeed={60}
-                                    smartBackspace
-                                    shuffle={false}
-                                    backDelay={3000}
-                                    fadeOut={false}
-                                    fadeOutDelay={100}
-                                    loop
-                                    cursorChar="_"
-                                />
+                            <Typed
+                                strings={[
+                                    'MERN Stack Developer',
+                                    'React Developer',
+                                    'Frontend Developer']}
+                                typeSpeed={60}
+                                backSpeed={60}
+                                smartBackspace
+                                shuffle={false}
+                                backDelay={3000}
+                                fadeOut={false}
+                                fadeOutDelay={100}
+                                loop
+                                cursorChar="_"
+                            />
                         </p>
+                    </div>
+                    <div className="my-8">
+                        <button onClick={handleDownloadResume} className="text-white uppercase font-bold flex items-center gap-2 bg-gradient-to-r from-blue-400 hover:to-blue-400 via-purple-500 to-pink-500 hover:from-pink-500 py-2 px-3 rounded-full">Download Resume <AiOutlineCloudDownload /></button>
                     </div>
                 </div>
                 <div className='mx-auto'>
                     <div
-                        className='banner-img bg-bandPrimary border-4 rounded-bl-full rounded-br-full rounded-tl-full overflow-hidden w-3/4 mx-auto'
+                        className='banner-img bg-bandSecondary border-4 rounded-bl-full rounded-br-full rounded-tl-full overflow-hidden w-3/4 mx-auto shadow-md shadow-white'
                     >
                         <img className=''
                             src={myImg} alt="" />

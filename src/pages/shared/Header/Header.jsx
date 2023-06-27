@@ -5,13 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { AiOutlineHome, AiOutlineMail, AiOutlineProject } from 'react-icons/ai';
 import { SiAboutdotme } from 'react-icons/si';
-import { HiOutlineDocument } from 'react-icons/hi';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const handleDownloadResume = () => {
-        window.open("https://drive.google.com/u/0/uc?id=1XhOOmSn6iqDiaA-DNsgsBg3HS7YFNtfa&export=download");
-    };
+    
     const [isHeaderFixed, setIsHeaderFixed] = useState(false);
 
     useEffect(() => {
@@ -44,9 +41,6 @@ const Header = () => {
             <li>
                 <ActiveLink to="/about">{isHeaderFixed && <SiAboutdotme />}</ActiveLink>
             </li>
-            <li onClick={handleDownloadResume}>
-                <ActiveLink >{isHeaderFixed && <HiOutlineDocument />}</ActiveLink>
-            </li>
             <li>
                 <ActiveLink to="/contact">{isHeaderFixed && <AiOutlineMail />}</ActiveLink>
             </li>
@@ -70,9 +64,6 @@ const Header = () => {
                         </li>
                         <li>
                             <ActiveLink to="/about">About</ActiveLink>
-                        </li>
-                        <li onClick={handleDownloadResume}>
-                            <ActiveLink >Resume</ActiveLink>
                         </li>
                         <li>
                             <ActiveLink to="/contact">Contact</ActiveLink>
@@ -113,10 +104,6 @@ const Header = () => {
                             <hr className='w-full' />
                             <li className=''>
                                 <ActiveLink to="/about">About</ActiveLink>
-                            </li>
-                            <hr className='w-full' />
-                            <li onClick={handleDownloadResume} className=''>
-                                <ActiveLink>resume</ActiveLink>
                             </li>
                             <hr className='w-full' />
                             <li className=''>

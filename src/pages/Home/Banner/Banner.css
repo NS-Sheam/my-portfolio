@@ -11,7 +11,7 @@
     25% {
       /* transform: scale(1.2); */
       transform: translate(0%, 10%);
-      border-color: #210062;
+      border-color: #ed1414;
     }
     50% {
       /* transform: scale(1); */
@@ -34,6 +34,16 @@
     position: relative;
   }
   
-  .banner-img {
+  /* .banner-img {
     animation: movingAnim 3s infinite;
+  } */
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
   }
+  
