@@ -7,6 +7,8 @@ import { AiOutlineHome, AiOutlineMail, AiOutlineProject } from 'react-icons/ai';
 import { SiAboutdotme } from 'react-icons/si';
 import { motion } from "framer-motion";
 import { ThemeContext } from '../../../layouts/Main';
+import logo from "../../../assets/images/ns-logo.png"
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -68,12 +70,14 @@ const Header = () => {
             {/* For dextop */}
             <section className={`${isHeaderFixed && "hidden"} hidden lg:flex justify-around items-center inner-container py-4`}>
                 <div className='flex justify-center items-center gap-2'>
-                    <h3 className='text-white font-bold'>NS-Sheam</h3>
+                    <Link to="/">
+                        <img className='w-20' src={logo} alt="logo" />
+                    </Link>
                     <div className="switch dark-switch" data-isOn={isOn} onClick={toggleSwitch}>
                         <motion.div className={theme == "light" ? "dark-handle" : "light-handle"} layout transition={spring} />
                     </div>
                 </div>
-                <div className={``}>
+                <div className="">
                     <ul className='header-list flex gap-6 text-bandFont'>
                         <li>
                             <ActiveLink to="/">Home</ ActiveLink>
@@ -102,10 +106,12 @@ const Header = () => {
             {/* For Mobile  */}
             <section className='lg:hidden my-container px-4 py-4 flex justify-between items-start'>
                 <div className='flex justify-center items-center gap-2'>
-                <h3 className='text-white text-xl font-bold'>NS-Sheam</h3>
-                <div className="switch dark-switch" data-isOn={isOn} onClick={toggleSwitch}>
-                    <motion.div className={theme == "light" ? "dark-handle" : "light-handle"} layout transition={spring} />
-                </div>
+                    <Link to="/">
+                        <img className='w-12' src={logo} alt="logo" />
+                    </Link>
+                    <div className="switch dark-switch" data-isOn={isOn} onClick={toggleSwitch}>
+                        <motion.div className={theme == "light" ? "dark-handle" : "light-handle"} layout transition={spring} />
+                    </div>
                 </div>
                 <div className='flex flex-col justify-center items-end'>
                     <div>
