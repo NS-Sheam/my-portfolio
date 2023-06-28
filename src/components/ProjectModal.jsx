@@ -52,7 +52,7 @@ const ProjectModal = ({ projectData }) => {
                             </div>
                         </div>
                         {/* if there is a button, it will close the modal */}
-                        <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 bg-white hover:bg-warning border-none">✕</button>
+                        <button className="btn text-black btn-sm btn-circle btn-ghost absolute right-2 top-2 bg-white hover:bg-warning border-none">✕</button>
                     </div>
                 </form>
             </dialog>
