@@ -66,14 +66,14 @@ const Header = () => {
     return (
         <>
             {/* For dextop */}
-            <section className='hidden lg:flex justify-around items-center inner-container py-4'>
+            <section className={`${isHeaderFixed && "hidden"} hidden lg:flex justify-around items-center inner-container py-4`}>
                 <div className='flex justify-center items-center gap-2'>
                     <h3 className='text-white font-bold'>NS-Sheam</h3>
                     <div className="switch dark-switch" data-isOn={isOn} onClick={toggleSwitch}>
                         <motion.div className={theme == "light" ? "dark-handle" : "light-handle"} layout transition={spring} />
                     </div>
                 </div>
-                <div className={`${isHeaderFixed && "hidden"}`}>
+                <div className={``}>
                     <ul className='header-list flex gap-6 text-bandFont'>
                         <li>
                             <ActiveLink to="/">Home</ ActiveLink>
