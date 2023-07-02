@@ -45,7 +45,7 @@ const Header = () => {
     }, []);
     const floatingMenu = <div
         className={`${isHeaderFixed && `fixed bottom-2 md:bottom-auto md:left-2 w-full md:w-auto md:top-1/3 rounded-full z-10 bg-bandTernary`}`}>
-        <ul className={`header-list flex gap-6 ${isHeaderFixed && "flex-row md:flex-col gap-6 p-3 text-2xl items-center justify-center"} ${theme == "light" ? "text-bandTernary" : "text-bandFont"}`}>
+        <ul className={`header-list flex gap-6 ${isHeaderFixed && "flex-row md:flex-col p-3 text-2xl items-center justify-center"} ${theme == "light" ? "text-bandTernary" : "text-bandFont"}`}>
             <li>
                 <ActiveLink to="/">{isHeaderFixed && <AiOutlineHome />}</ ActiveLink>
             </li>
@@ -59,7 +59,7 @@ const Header = () => {
                 <ActiveLink to="/contact">{isHeaderFixed && <AiOutlineMail />}</ActiveLink>
             </li>
             <li onClick={toggleSwitch} className='text-bandYellow'>
-                {theme == "light" ? <BiMoon /> : <BiSun />}
+                {isHeaderFixed && <p>{theme == "light" ? <BiMoon /> : <BiSun />}</p>}
             </li>
 
         </ul>

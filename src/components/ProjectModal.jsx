@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { RxOpenInNewWindow } from 'react-icons/rx';
 import { AiFillGithub } from 'react-icons/ai';
 import { FiLink } from 'react-icons/fi';
+import LazyLoad from "react-lazy-load";
 
 const ProjectModal = ({ projectData }) => {
     const { projectName, technology, description, liveSite, image, clientSite, serverSite } = projectData;
@@ -16,7 +17,9 @@ const ProjectModal = ({ projectData }) => {
                     <div className="modal-action">
                         <div className="flex flex-col md:flex-row items-center justify-center gap-6 lg:gap-10 w-full">
                             <div className="md:w-1/2 rounded-lg">
-                                <img className="rounded-lg w-full" src={image} alt="" />
+                                <LazyLoad>
+                                    <img className="rounded-lg w-full" src={image} alt="" />
+                                </LazyLoad>
                             </div>
                             <div className="md:w-1/2 space-y-2">
                                 <h1 className="text-xl lg:text-3xl text-warning font-bold text-center">{projectName}</h1>
