@@ -18,10 +18,10 @@ const SingleProject = ({ project, setSingleProject }) => {
             </figure>
             <div className="card-body items-center text-center p-4 space-y-3 flex flex-col flex-grow justify-between">
                 <h2 className="card-title text-xl lg:text-2xl font-bold">{project.projectName}</h2>
-                <p className="text-left leading-3 text-bandYellow">Technologies:</p>
+                <p className="text-left leading-3 text-bandYellow font-bold">Technologies:</p>
                 <p className="list-disc list-inside leading-5">
                     {project.technology.slice(0,5).map((tech, i) => (
-                        <span key={i} className="text-left leading-3 text-xs my-1">
+                        <span key={i} className="text-left leading-7 my-1">
                             &#8226; &nbsp;{tech} &nbsp;
                         </span>
                     ))}

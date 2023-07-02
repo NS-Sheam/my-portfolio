@@ -8,7 +8,7 @@ const ActiveLink = ({to, children}) => {
         className={({ isActive, isPending }) =>
             isActive
                 ? "text-bandYellow"
-                : "text-white"
+                : "text-white hover:text-bandYellow"
 
         }
     >

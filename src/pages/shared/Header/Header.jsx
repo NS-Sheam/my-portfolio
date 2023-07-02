@@ -93,10 +93,10 @@ const Header = () => {
                         </li>
 
                     </ul>
-                </div>
+            </div>
                 <div>
                     <ActiveLink to="/contact">
-                        <button className='font-semibold text-[#d207d9] border-2 border-[#d207d9] py-2 px-3 hover:border-white hover:text-white text-2xl'>
+                        <button className='font-semibold text-white bg-bandPrimary border-2 rounded-md py-2 px-3 hover:border-bandYellow hover:text-bandYellow text-2xl'>
                             Hire me
                         </button>
                     </ActiveLink>
@@ -107,7 +107,7 @@ const Header = () => {
             <section className='lg:hidden my-container px-4 py-4 flex justify-between items-center'>
                 <div className='flex justify-center items-center gap-2'>
                     <Link to="/">
-                        <img className='w-12' src={logo} alt="logo" />
+                    <img className='w-12' src={logo} alt="logo" />
                     </Link>
                     <div className="switch dark-switch" data-isOn={isOn} onClick={toggleSwitch}>
                         <motion.div className={theme == "light" ? "dark-handle" : "light-handle"} layout transition={spring} />
@@ -142,7 +142,7 @@ const Header = () => {
                             <hr className='w-full' />
 
                             <ActiveLink to="/contact" className="">
-                                <button className='font-semibold text-[#d207d9] border-2 border-[#d207d9] py-2 px-2 hover:border-white hover:text-white text-xl'>
+                                <button className='font-semibold bg-bandPrimary text-white border-2 py-2 px-2 hover:border-bandYellow hover:text-bandYellow rounded-md text-xl'>
                                     Hire me
                                 </button>
                             </ActiveLink>

@@ -3,7 +3,6 @@ import "./Banner.css"
 import myImg from "../../../assets/images/my-img.png"
 import Typed from 'react-typed';
 import { AiOutlineCloudDownload } from 'react-icons/ai';
-
 const Banner = () => {
     // const [showImage, setShowImage] = useState(true);
 
@@ -52,12 +51,12 @@ const Banner = () => {
                         </p>
                     </div>
                     <div className="my-8">
-                        <button onClick={handleDownloadResume} className="text-white uppercase font-bold flex items-center gap-2 bg-gradient-to-r from-blue-400 hover:to-blue-400 via-purple-500 to-pink-500 hover:from-pink-500 py-2 px-3 rounded-full">Download Resume <AiOutlineCloudDownload /></button>
+                        <button onClick={handleDownloadResume} className="text-white uppercase font-bold flex items-center gap-2 bg-gradient-to-r from-blue-400 hover:to-blue-400 via-purple-500 to-pink-500 hover:from-pink-500  border-2 py-2 px-3 rounded-full">Download Resume <AiOutlineCloudDownload /></button>
                     </div>
                 </div>
                 <div className=''>
                     <div
-                        className='banner-img bg-bandSecondary border-4 rounded-bl-full rounded-br-full rounded-tl-full overflow-hidden'
+                        className='banner-img bg-bandSecondary rounded-bl-full rounded-br-full rounded-tl-full overflow-hidden'
                     >
                         <img className=''
                             src={myImg} alt="" />
@@ -90,12 +89,12 @@ const Banner = () => {
                         </p>
                     </div>
                     <div className="my-8">
-                        <button onClick={handleDownloadResume} className="text-white uppercase font-bold flex items-center gap-2 bg-gradient-to-r from-blue-400 hover:to-blue-400 via-purple-500 to-pink-500 hover:from-pink-500 py-2 px-3 rounded-full">Download Resume <AiOutlineCloudDownload /></button>
+                        <button onClick={handleDownloadResume} className="text-white uppercase font-bold flex items-center gap-2 bg-gradient-to-r from-blue-400 hover:to-blue-400 via-purple-500 to-pink-500 hover:from-pink-500 py-2 px-3 rounded-full border-2">Download Resume <AiOutlineCloudDownload /></button>
                     </div>
                 </div>
                 <div className='mx-auto'>
                     <div
-                        className='banner-img bg-bandSecondary border-4 rounded-bl-full rounded-br-full rounded-tl-full overflow-hidden w-3/4 mx-auto'
+                        className='banner-img bg-bandSecondary rounded-bl-full rounded-br-full rounded-tl-full overflow-hidden w-3/4 mx-auto'
                     >
                         <img className=''
                             src={myImg} alt="" />

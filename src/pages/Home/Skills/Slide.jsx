@@ -4,7 +4,7 @@ import 'react-circular-progressbar/dist/styles.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
-import img from "../../../assets/images/react.png"
+
 
 // Import Swiper styles
 import 'swiper/swiper-bundle.min.css';
@@ -57,7 +57,7 @@ const Slide = () => {
                 modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                 spaceBetween={50}
                 slidesPerView={slidesPerView}
-                navigation={true}
+                navigation={false}
                 autoplay={{ delay: 3000 }}
                 // pagination={{ clickable: true }}
                 onSlideChange={() => console.log('slide change')}

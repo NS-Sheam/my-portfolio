@@ -16,7 +16,7 @@ const About = () => {
     });
     return (
         <>
-            <div className="bg-bandSecondary">
+            <div className=" bg-gradient-to-r from-bandPrimary via-bandSecondary to-bandTernary ">
                 <Header />
             </div>
             <h1 className="pt-5 md:pt-8 text-center text-3xl lg:text-6xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 text-transparent bg-clip-text italic">About me!</h1>
@@ -37,8 +37,8 @@ const About = () => {
                     <p>LinkedIn: <Link to="https://linkedin.com/in/nazmus-sakib-sheam" className="font-bold text-green-500">Nazmus Sakib</Link></p>
                     <p>Github: <Link to="https://github.com/nS-Sheam/" className="font-bold text-green-500">NS-Sheam</Link></p>
 
-                    <button onClick={handleDownloadResume} className="mx-auto w-56 block py-2 px-5 rounded-full text-white bg-bandPrimary hover:bg-bandSecondary font-bold">Download Resume</button>
-                    <button onClick={handleDownloadCv} className="mx-auto w-56 block py-2 px-5 rounded-full text-white bg-bandPrimary hover:bg-bandSecondary font-bold">Download CV</button>
+                    <button onClick={handleDownloadResume} className="mx-auto w-56 block py-2 px-5 rounded-full text-white  bg-gradient-to-r from-bandPrimary via-bandSecondary to-bandTernary hover:to-bandPrimary hover:from-bandTernary font-bold">Download Resume</button>
+                    <button onClick={handleDownloadCv} className="mx-auto w-56 block py-2 px-5 rounded-full text-white  bg-gradient-to-r from-bandPrimary via-bandSecondary to-bandTernary hover:to-bandPrimary hover:from-bandTernary font-bold">Download CV</button>
 
                 </div>
                 <div
