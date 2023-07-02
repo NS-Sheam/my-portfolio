@@ -77,7 +77,7 @@ const Contact = () => {
                                 <input type="text" placeholder="email" name="from_email" className={`input input-bordered shadow-md ${theme == "light" ? "bg-slate-800 shadow-slate-800" : "bg-white"}`} />
                             </div>
                             <textarea
-                                data-aos="fade-up-left"
+                                data-aos="flip-right"
                                 data-aos-anchor="#example-anchor"
                                 data-aos-duration="1500"
                                 placeholder="your message" name="message" className={`p-3 text-base textarea textarea-bordered textarea-lg w-full ${theme == "light" ? "bg-slate-800 shadow-slate-800" : "bg-white"}`} ></textarea>

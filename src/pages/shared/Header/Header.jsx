@@ -4,6 +4,7 @@ import "./Header.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { AiOutlineHome, AiOutlineMail, AiOutlineProject } from 'react-icons/ai';
+import { BiMoon, BiSun } from 'react-icons/bi';
 import { SiAboutdotme } from 'react-icons/si';
 import { motion } from "framer-motion";
 import { ThemeContext } from '../../../layouts/Main';
@@ -57,6 +58,9 @@ const Header = () => {
             <li>
                 <ActiveLink to="/contact">{isHeaderFixed && <AiOutlineMail />}</ActiveLink>
             </li>
+            <li onClick={toggleSwitch} className='text-bandYellow'>
+                {theme == "light" ? <BiMoon /> : <BiSun />}
+            </li>
 
         </ul>
     </div>
@@ -93,7 +97,7 @@ const Header = () => {
                         </li>
 
                     </ul>
-            </div>
+                </div>
                 <div>
                     <ActiveLink to="/contact">
                         <button className='font-semibold text-white bg-bandPrimary border-2 rounded-md py-2 px-3 hover:border-bandYellow hover:text-bandYellow text-2xl'>
@@ -107,7 +111,7 @@ const Header = () => {
             <section className='lg:hidden my-container px-4 py-4 flex justify-between items-center'>
                 <div className='flex justify-center items-center gap-2'>
                     <Link to="/">
-                    <img className='w-12' src={logo} alt="logo" />
+                        <img className='w-12' src={logo} alt="logo" />
                     </Link>
                     <div className="switch dark-switch" data-isOn={isOn} onClick={toggleSwitch}>
                         <motion.div className={theme == "light" ? "dark-handle" : "light-handle"} layout transition={spring} />
@@ -122,7 +126,7 @@ const Header = () => {
 
                         }
                     </div>
-                    <div className={`sm-menu-item absolute transform duration-500 ${theme == "light" ? " bg-black bg-opacity-60" : "backdrop-blur-sm"} rounded-md border p-2 m-2 border-white z-30 ${isMenuOpen ? "top-10" : "-top-80"}`}>
+                    <div className={`sm-menu-item absolute transform duration-500 ${theme == "light" ? " bg-black bg-opacity-60" : "backdrop-blur-sm"} rounded-md border p-2 w-40 m-2 border-white z-30 ${isMenuOpen ? "top-10" : "-top-80"}`}>
                         <ul className={`header-list text-bandFont mb-2 text-xl flex flex-col items-center gap-2`}>
                             <li className=''>
                                 <ActiveLink to="/">Home</ ActiveLink>
