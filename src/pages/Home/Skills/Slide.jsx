@@ -66,13 +66,13 @@ const Slide = () => {
                 {Array.isArray(skills) &&
                     skills.map(skill => (
                         <SwiperSlide key={skill.id}>
-                            <div className='text-center relative'>
+                            <div className='text-center relative w-3/4 lg:w-full mx-auto'>
                                 <CircularProgressbar
                                     styles={styles}
                                     value={skill.percentage}
                                     text={`${skill.percentage}%`} />
-                                <p className='text-xs lg:text-2xl text-bandFont font-bold'>{skill.name}</p>
-                                <p className='text-xs lg:text-2xl text-bandFont font-bold'>{skill.proficiency}</p>
+                                <p className='text-xl lg:text-2xl text-white font-bold'>{skill.name}</p>
+                                <p className='text-xl lg:text-2xl text-bandYellow font-bold'>{skill.proficiency}</p>
                             </div>
                         </SwiperSlide>
                     ))
