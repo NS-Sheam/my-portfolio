@@ -1,5 +1,5 @@
 /*------ font for website ------*/
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700;800&family=Grand+Hotel&family=Inter&family=Lato:ital,wght@0,400;0,700;1,700&family=League+Spartan:wght@300;400;500;600;700;800&family=Manrope:wght@400;600;700;800&family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600;700&family=Oswald:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Work+Sans:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700;800&family=Grand+Hotel&family=Inter&family=Lato:ital,wght@0,400;0,700;1,700&family=League+Spartan:wght@300;400;500;600;700;800&family=Manrope:wght@400;600;700;800&family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600;700&family=Oswald:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Work+Sans:wght@400;700;800&display=swap');
 
 /*------ tailwind css  ------*/
 @tailwind base;
@@ -7,6 +7,7 @@
 @tailwind utilities;
 body{
   /*------ font-family: 'League Spartan', sans-serif; ------*/
+  font-family: 'Roboto Condensed', sans-serif;
 }
 .inner-container {
   @apply xl:px-20 md:px-10 px-4 sm:px-2;
@@ -19,7 +20,8 @@ body{
 } */
 
 .font-gradient{
-  background: linear-gradient(to right top, #d207d9, #ac05ca, #ebbdfe, #be9fd7, #c1aaed);
+  /* background: linear-gradient(to right top, #d207d9, #ac05ca, #ebbdfe, #be9fd7, #c1aaed); */
+  background: linear-gradient(to right top, #ffc300, #ffd60a, #eadb90, #fff9de, #f9f6e6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

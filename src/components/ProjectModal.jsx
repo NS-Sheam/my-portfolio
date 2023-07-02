@@ -36,15 +36,15 @@ const ProjectModal = ({ projectData }) => {
                                         </li>)
                                     }
                                 </ul>
-                                <div className="flex items-center gap-3 h-8">
-                                    <Link className="transform transition-all duration-200 text-white hover:text-4xl text-2xl" to={liveSite}>
+                                <div className="flex items-center gap-3 h-8 text-bandYellow">
+                                    <Link className="transform transition-all duration-200 hover:text-4xl text-2xl" to={liveSite}>
                                         <RxOpenInNewWindow />
                                     </Link>
-                                    <Link className="transform transition-all duration-200 text-white hover:text-4xl text-2xl" to={clientSite}>
+                                    <Link className="transform transition-all duration-200  hover:text-4xl text-2xl" to={clientSite}>
                                         <AiFillGithub />
                                     </Link>
                                     {
-                                        serverSite && <Link className="transform transition-all duration-200 text-white hover:text-4xl text-2xl" to={serverSite}>
+                                        serverSite && <Link className="transform transition-all duration-200 hover:text-4xl text-2xl" to={serverSite}>
                                             <FiLink />
                                         </Link>
                                     }

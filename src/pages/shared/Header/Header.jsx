@@ -43,8 +43,8 @@ const Header = () => {
         };
     }, []);
     const floatingMenu = <div
-        className={`${isHeaderFixed && "fixed bottom-2 md:bottom-auto md:left-2 w-full md:w-auto md:top-1/3 bg-bandPrimary rounded-full z-10"}`}>
-        <ul className={`header-list flex gap-6 ${isHeaderFixed && "flex-row md:flex-col gap-6 p-3 text-2xl items-center justify-center"} text-bandFont`}>
+        className={`${isHeaderFixed && `fixed bottom-2 md:bottom-auto md:left-2 w-full md:w-auto md:top-1/3 rounded-full z-10 bg-bandTernary`}`}>
+        <ul className={`header-list flex gap-6 ${isHeaderFixed && "flex-row md:flex-col gap-6 p-3 text-2xl items-center justify-center"} ${theme == "light" ? "text-bandTernary" : "text-bandFont"}`}>
             <li>
                 <ActiveLink to="/">{isHeaderFixed && <AiOutlineHome />}</ ActiveLink>
             </li>
@@ -71,14 +71,14 @@ const Header = () => {
             <section className={`${isHeaderFixed && "hidden"} hidden lg:flex justify-around items-center inner-container py-4`}>
                 <div className='flex justify-center items-center gap-2'>
                     <Link to="/">
-                        <img className='w-20' src={logo} alt="logo" />
+                        <img className='w-24' src={logo} alt="logo" />
                     </Link>
                     <div className="switch dark-switch" data-isOn={isOn} onClick={toggleSwitch}>
                         <motion.div className={theme == "light" ? "dark-handle" : "light-handle"} layout transition={spring} />
                     </div>
                 </div>
                 <div className="">
-                    <ul className='header-list flex gap-6 text-bandFont'>
+                    <ul className='header-list flex gap-6 text-bandFont text-2xl font-bold'>
                         <li>
                             <ActiveLink to="/">Home</ ActiveLink>
                         </li>
@@ -96,7 +96,7 @@ const Header = () => {
                 </div>
                 <div>
                     <ActiveLink to="/contact">
-                        <button className='font-semibold text-[#d207d9] border-2 border-[#d207d9] py-2 px-3 hover:border-bandFont hover:text-bandFont'>
+                        <button className='font-semibold text-[#d207d9] border-2 border-[#d207d9] py-2 px-3 hover:border-white hover:text-white text-2xl'>
                             Hire me
                         </button>
                     </ActiveLink>
@@ -104,7 +104,7 @@ const Header = () => {
             </section>
 
             {/* For Mobile  */}
-            <section className='lg:hidden my-container px-4 py-4 flex justify-between items-start'>
+            <section className='lg:hidden my-container px-4 py-4 flex justify-between items-center'>
                 <div className='flex justify-center items-center gap-2'>
                     <Link to="/">
                         <img className='w-12' src={logo} alt="logo" />
@@ -117,8 +117,8 @@ const Header = () => {
                     <div>
                         {
                             isMenuOpen ?
-                                <FontAwesomeIcon onClick={() => setIsMenuOpen(!isMenuOpen)} className={'text-2xl text-bandFont font-extrabold'} icon={faXmark} /> :
-                                <FontAwesomeIcon onClick={() => setIsMenuOpen(!isMenuOpen)} className={'text-2xl text-bandFont font-extrabold'} icon={faBars} />
+                                <FontAwesomeIcon onClick={() => setIsMenuOpen(!isMenuOpen)} className={'text-2xl text-white font-extrabold'} icon={faXmark} /> :
+                                <FontAwesomeIcon onClick={() => setIsMenuOpen(!isMenuOpen)} className={'text-2xl text-white font-extrabold'} icon={faBars} />
 
                         }
                     </div>
@@ -142,8 +142,8 @@ const Header = () => {
                             <hr className='w-full' />
 
                             <ActiveLink to="/contact" className="">
-                                <button className='font-semibold text-[#d207d9] border-2 border-[#d207d9] py-2 px-2 hover:border-bandFont hover:text-bandFont text-xl'>
-                                    Contact me
+                                <button className='font-semibold text-[#d207d9] border-2 border-[#d207d9] py-2 px-2 hover:border-white hover:text-white text-xl'>
+                                    Hire me
                                 </button>
                             </ActiveLink>
                         </ul>

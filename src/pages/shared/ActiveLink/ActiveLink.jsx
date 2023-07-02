@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { NavLink } from 'react-router-dom';
 
 const ActiveLink = ({to, children}) => {
@@ -7,8 +7,8 @@ const ActiveLink = ({to, children}) => {
         to={to}
         className={({ isActive, isPending }) =>
             isActive
-                ? ""
-                : ""
+                ? "text-bandYellow"
+                : "text-white"
 
         }
     >

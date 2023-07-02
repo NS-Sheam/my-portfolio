@@ -1,7 +1,9 @@
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import 'react-tabs/style/react-tabs.css';
 import TabItem from './TabItem';
 import ProjectModal from '../../../components/ProjectModal';
+import { ThemeContext } from '../../../layouts/Main';
+import SectionTitle from '../../../components/SectionTitle';
 
 
 const Projects = () => {
@@ -9,6 +11,7 @@ const Projects = () => {
     const [jsProjects, setJsProjects] = useState([]);
     const [htmlCssProjects, setHtmlCssProjects] = useState([]);
     const [singleProject, setSingleProject] = useState([]);
+    const {theme} = useContext(ThemeContext);
     useEffect(() => {
         fetch("projectData.json")
             .then(res => res.json())
@@ -33,9 +36,12 @@ const Projects = () => {
                 data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom"
                 data-aos-duration="1000"
-                className='w-full lg:w-4/5 mx-auto text-center p-4 lg:p-8 lg:my-8 bg-white rounded-2xl shadow-2xl'>
-                <h1 className='text-bandPrimary text-xl lg:text-2xl font-bold mb-4'>Projects</h1>
-                <p className='text-bandSecondary text-xs lg:text-xl mb-4 w-3/4 mx-auto'>Browse through my portfolio to explore a diverse range of projects that demonstrate my skills in web development. From interactive React applications to functional JavaScript projects and visually appealing HTML/CSS interfaces, you will find a showcase of my expertise in various web technologies.</p>
+                data-aos-offset="100"
+                className={`w-full lg:w-4/5 mx-auto text-center p-4 lg:p-8 lg:my-8 ${theme == "light" ? "bg-white" : "bg-bandTernary"} rounded-2xl shadow-2xl`}>
+                    <SectionTitle
+                    heading="Projects"
+                    paragraph="Browse through my portfolio to explore a diverse range of projects that demonstrate my skills in web development. From interactive React applications to functional JavaScript projects and visually appealing HTML/CSS interfaces, you will find a showcase of my expertise in various web technologies."
+                    />
                 <div className="">
                     <TabItem
                         reactProjects={reactProjects}

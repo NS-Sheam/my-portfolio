@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
+import img from "../../../assets/images/react.png"
 
 // Import Swiper styles
 import 'swiper/swiper-bundle.min.css';
@@ -39,7 +40,7 @@ const Slide = () => {
     // call the function once on mount
     const styles = {
         path: {
-            stroke: '#77037B' // Green color
+            stroke: '#ffd60a' // Green color
         },
         trail: {
             stroke: '#d6d6d6' // Grey color
@@ -65,7 +66,7 @@ const Slide = () => {
                 {Array.isArray(skills) &&
                     skills.map(skill => (
                         <SwiperSlide key={skill.id}>
-                            <div className='text-center'>
+                            <div className='text-center relative'>
                                 <CircularProgressbar
                                     styles={styles}
                                     value={skill.percentage}

@@ -10,6 +10,6 @@
     { "id": 9, "name": "Git", "proficiency": "Familier", "percentage": 75 },
     { "id": 10, "name": "Tailwind css", "proficiency": "Advanced", "percentage": 85 },
     { "id": 11, "name": "Bootstrap", "proficiency": "Advanced", "percentage": 80 },
-    { "id": 12, "name": "Bootstrap", "proficiency": "Advanced", "percentage": 80 }
+    { "id": 12, "name": "React Bootstrap", "proficiency": "Advanced", "percentage": 80 }
   ]
   

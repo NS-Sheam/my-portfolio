@@ -1,4 +1,8 @@
-.header-banner{
-    background: url("../../../assets/images/banner.png") no-repeat fixed;
-    /* background-color: yellow; */
+.header-banner {
+    background-color: rgb(81, 97, 119);
+    background-blend-mode: multiply;
+    background-image: url("../../../assets/images/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
