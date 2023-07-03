@@ -28,7 +28,7 @@ const Header = () => {
     useEffect(() => {
         const handleScroll = () => {
             const scrollPosition = window.pageYOffset;
-            console.log(scrollPosition);
+            // console.log(scrollPosition);
 
             if (scrollPosition > 0) {
                 setIsHeaderFixed(true);

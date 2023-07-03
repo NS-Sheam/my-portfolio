@@ -4,7 +4,7 @@ import { loadFull } from "tsparticles";
 
 const ParticlesDesign = () => {
     const particlesInit = useCallback(async (particles) => {
-        console.log(particles);
+        // console.log(particles);
         // You can initiate the tsParticles instance (particles) here, adding custom shapes or presets
         // This loads the tsparticles package bundle, it's the easiest method for getting everything ready
         // Starting from v2, you can add only the features you need, reducing the bundle size
@@ -12,16 +12,16 @@ const ParticlesDesign = () => {
     }, []);
 
     const particlesLoaded = useCallback(async (container) => {
-        console.log(container);
+        // console.log(container);
     }, []);
 
     return (
         <Particles
-        className="hidden"
             id="tsparticles"
             init={particlesInit}
             loaded={particlesLoaded}
             options={{
+                
                 fpsLimit: 120,
                 interactivity: {
                     events: {
@@ -47,10 +47,10 @@ const ParticlesDesign = () => {
                 },
                 particles: {
                     color: {
-                        value: "#F9E2AF",
+                        value: "#ffc300",
                     },
                     links: {
-                        color: "#F9E2AF",
+                        color: "#ffc300",
                         distance: 150,
                         enable: true,
                         opacity: 0.5,
@@ -65,7 +65,7 @@ const ParticlesDesign = () => {
                         outModes: {
                             default: "bounce",
                         },
-                        random: false,
+                        random: true,
                         speed: 2,
                         straight: false,
                     },
@@ -74,16 +74,16 @@ const ParticlesDesign = () => {
                             enable: true,
                             area: 800,
                         },
-                        value: 80,
+                        value: 50,
                     },
                     opacity: {
-                        value: 0.2,
+                        value: 0.3,
                     },
                     shape: {
                         type: "circle",
                     },
                     size: {
-                        value: { min: 1, max: 5 },
+                        value: { min: 1, max: 3 },
                     },
                 },
                 detectRetina: true,

@@ -3,6 +3,7 @@ import HeaderBanner from '../HeaderBanner/HeaderBanner';
 import Skills from '../Skills/Skills';
 import Projects from '../Projects/Projects';
 import { useLayoutEffect } from 'react';
+import Quotes from '../Quotes/Quotes';
 
 const Home = () => {
     useLayoutEffect(() => {
@@ -13,6 +14,7 @@ const Home = () => {
             <HeaderBanner />
             <Skills />
             <Projects />
+            <Quotes />
         </>
     );
 };
